@@ -1,0 +1,33 @@
+[1] Layers covered by the trail: 31 rounds = 2 rounds of guessed key + L layers + 1 keyless last round
+  guess 0 round(s) ( 0 key bits): L = 30 layers, single-trail |c| = 2^-30, c^2 = 2^-60
+  guess 1 round(s) ( 4 key bits): L = 29 layers, single-trail |c| = 2^-29, c^2 = 2^-58
+  guess 2 round(s) (20 key bits): L = 28 layers, single-trail |c| = 2^-28, c^2 = 2^-56
+
+[2] Key recovery (Algorithm 2) with 20 guessed key bits, L = 28, |c| = 2^-28 (Selcuk eq. 12)
+  a = 10, P_S = 0.5: N = 2^59.44 known plaintexts; exhaustive part = 2^70 encryptions; counters 2^17; evaluation 2^36 table look-ups
+  a = 10, P_S = 0.9: N = 2^60.39 known plaintexts; exhaustive part = 2^70 encryptions; counters 2^17; evaluation 2^36 table look-ups
+  a = 16, P_S = 0.5: N = 2^60.23 known plaintexts; exhaustive part = 2^64 encryptions; counters 2^17; evaluation 2^36 table look-ups
+  a = 16, P_S = 0.9: N = 2^60.97 known plaintexts; exhaustive part = 2^64 encryptions; counters 2^17; evaluation 2^36 table look-ups
+  a = 20, P_S = 0.5: N = 2^60.59 known plaintexts; exhaustive part = 2^60 encryptions; counters 2^17; evaluation 2^36 table look-ups
+  a = 20, P_S = 0.9: N = 2^61.26 known plaintexts; exhaustive part = 2^60 encryptions; counters 2^17; evaluation 2^36 table look-ups
+
+[3] Distinguisher on the full 31 rounds without key guess, L = 30, |c| = 2^-30
+  N = 2^60: both error probabilities about 0.309 (threshold |c|/2)
+  N = 2^61: both error probabilities about 0.240 (threshold |c|/2)
+  N = 2^62: both error probabilities about 0.159 (threshold |c|/2)
+  N = 2^63: both error probabilities about 0.079 (threshold |c|/2)
+
+[4] Rounds needed for the best single trail to fall below 2^-64 (B_R = 2R for R >= 8, last round keyless)
+  smallest layer count with B_R > 64: 33; plus the keyless last round: 34 rounds (EE-LBC has 31)
+
+[5] Spread of |c| over keys: normal model of Leander (EUROCRYPT 2011, Sect. 4.2)
+  L= 8: sigma^2/eta^2 >= 0.056; model log2|c| + L at Q1/median/Q3: -0.25 / -0.00 / +0.21;  measured (16 keys): -0.30 / +0.04 / +0.06
+  L=10: sigma^2/eta^2 >= 0.092; model log2|c| + L at Q1/median/Q3: -0.33 / +0.00 / +0.27;  measured (16 keys): -0.26 / -0.18 / -0.06
+  L=12: sigma^2/eta^2 >= 0.134; model log2|c| + L at Q1/median/Q3: -0.41 / +0.00 / +0.32;  measured (16 keys): -0.89 / -0.38 / +0.08
+  L=28: sigma^2/eta^2 >= 0.571; model log2|c| + L at Q1/median/Q3: -0.89 / +0.01 / +0.60;  fraction of keys with |c| >= 2^-L: 0.50, >= 2^-(L+0.5): 0.66, >= 2^-(L+1): 0.77
+  L=30: sigma^2/eta^2 >= 0.638; model log2|c| + L at Q1/median/Q3: -0.92 / +0.02 / +0.62;  fraction of keys with |c| >= 2^-L: 0.51, >= 2^-(L+0.5): 0.66, >= 2^-(L+1): 0.76
+
+[6] Median complexities (Leander, EUROCRYPT 2011, Definition 1) from the fixed-key hull over 2000 keys
+  key recovery, L = 28: median log2|c| = -28.13; N = 2^6/c^2 = 2^62.26, N = 2^7/c^2 = 2^63.26 (measured success at these N c^2: Table 5)
+  distinguisher, L = 30: median log2|c| = -30.17; with N = 2^62 and threshold |c_med|/2, both error probabilities at most 0.187 for half of the keys
+  distinguisher, L = 30: median log2|c| = -30.17; with N = 2^63 and threshold |c_med|/2, both error probabilities at most 0.104 for half of the keys

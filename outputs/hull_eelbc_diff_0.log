@@ -1,0 +1,32 @@
+# eelbc diff, e_0 -> e_0, masks with <= 2 active S-boxes at every S-layer input
+R= 1  log2(restricted sum) =   -3.000   log2(single 1-bit trail) =   -3.000
+R= 2  log2(restricted sum) =   -6.000   log2(single 1-bit trail) =   -6.000
+R= 3  log2(restricted sum) =   -9.000   log2(single 1-bit trail) =   -9.000
+R= 4  log2(restricted sum) =  -12.000   log2(single 1-bit trail) =  -12.000
+R= 5  log2(restricted sum) =  -15.000   log2(single 1-bit trail) =  -15.000
+R= 6  log2(restricted sum) =  -18.000   log2(single 1-bit trail) =  -18.000
+R= 7  log2(restricted sum) =  -21.000   log2(single 1-bit trail) =  -21.000
+R= 8  log2(restricted sum) =  -24.000   log2(single 1-bit trail) =  -24.000
+R= 9  log2(restricted sum) =  -27.000   log2(single 1-bit trail) =  -27.000
+R=10  log2(restricted sum) =  -29.994   log2(single 1-bit trail) =  -30.000
+R=11  log2(restricted sum) =  -32.989   log2(single 1-bit trail) =  -33.000
+R=12  log2(restricted sum) =  -35.983   log2(single 1-bit trail) =  -36.000
+R=13  log2(restricted sum) =  -38.977   log2(single 1-bit trail) =  -39.000
+R=14  log2(restricted sum) =  -41.971   log2(single 1-bit trail) =  -42.000
+R=15  log2(restricted sum) =  -44.965   log2(single 1-bit trail) =  -45.000
+R=16  log2(restricted sum) =  -47.958   log2(single 1-bit trail) =  -48.000
+R=17  log2(restricted sum) =  -50.951   log2(single 1-bit trail) =  -51.000
+R=18  log2(restricted sum) =  -53.945   log2(single 1-bit trail) =  -54.000
+R=19  log2(restricted sum) =  -56.938   log2(single 1-bit trail) =  -57.000
+R=20  log2(restricted sum) =  -59.931   log2(single 1-bit trail) =  -60.000
+R=21  log2(restricted sum) =  -62.924   log2(single 1-bit trail) =  -63.000
+R=22  log2(restricted sum) =  -65.917   log2(single 1-bit trail) =  -66.000
+R=23  log2(restricted sum) =  -68.910   log2(single 1-bit trail) =  -69.000
+R=24  log2(restricted sum) =  -71.903   log2(single 1-bit trail) =  -72.000
+R=25  log2(restricted sum) =  -74.896   log2(single 1-bit trail) =  -75.000
+R=26  log2(restricted sum) =  -77.888   log2(single 1-bit trail) =  -78.000
+R=27  log2(restricted sum) =  -80.881   log2(single 1-bit trail) =  -81.000
+R=28  log2(restricted sum) =  -83.874   log2(single 1-bit trail) =  -84.000
+R=29  log2(restricted sum) =  -86.867   log2(single 1-bit trail) =  -87.000
+R=30  log2(restricted sum) =  -89.860   log2(single 1-bit trail) =  -90.000
+R=31  log2(restricted sum) =  -92.853   log2(single 1-bit trail) =  -93.000

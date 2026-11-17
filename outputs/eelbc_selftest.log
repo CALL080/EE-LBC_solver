@@ -1,0 +1,3 @@
+decrypt(encrypt(x)) == x for 400 random (plaintext, key) pairs
+key=00000000000000000000  E(0)=1b7b51a05ea03b5c  E(ffff..)=49b3b9d238f37589
+key=ffffffffffffffffffff  E(0)=3e8955db920cec0c  E(ffff..)=bc921e297eac883f

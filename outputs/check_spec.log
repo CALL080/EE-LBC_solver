@@ -1,0 +1,83 @@
+[1] S-box
+  EE-LBC  S = C 5 6 B 7 0 A D 1 E F 8 4 9 3 2
+  PRESENT S = C 5 6 B 9 0 A D 3 E F 8 4 7 1 2
+  entries that differ from PRESENT: S(4)=7 (PRESENT 9), S(8)=1 (PRESENT 3), S(D)=9 (PRESENT 7), S(E)=3 (PRESENT 1)
+  bijective: True  involution: False
+  fixed points: []  algebraic degree per output bit (LSB first): [2, 3, 3, 3]
+
+[2] EE-LBC: differential uniformity 8 (max probability 8/16), entries equal to it: 1
+    EE-LBC: max |LAT| 6 (max bias 6/16), entries equal to it: 4
+    EE-LBC: single-bit -> single-bit differential transitions (a, b, DDT): [(1, 1, 2)]
+    EE-LBC: single-bit -> single-bit linear approximations (a, b, LAT): [(1, 2, -2), (1, 4, -2), (1, 8, 2), (2, 2, 4), (2, 4, -2), (2, 8, 2), (4, 4, -2), (4, 8, -2), (8, 4, -2)]
+    DDT (rows: input mask/difference, columns: output)
+      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+  0: 16  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  1:  0  2  0  0  0  0  0  6  0  2  0  0  0  4  0  2
+  2:  0  0  0  0  0  0  2  2  0  0  2  2  0  4  4  0
+  3:  0  2  0  2  0  0  2  2  0  2  6  0  0  0  0  0
+  4:  0  0  0  0  0  4  2  2  0  0  2  2  4  0  0  0
+  5:  0  2  2  0  0  0  0  0  2  0  2  4  2  2  0  0
+  6:  0  4  2  0  0  0  2  0  2  0  0  4  2  0  0  0
+  7:  0  2  0  2  0  0  4  0  0  0  0  0  4  2  0  2
+  8:  0  0  0  4  0  0  0  0  0  6  0  2  0  2  0  2
+  9:  0  0  2  0  6  0  0  0  2  0  0  0  0  0  6  0
+  a:  0  0  2  2  4  2  0  2  0  0  0  0  0  2  2  0
+  b:  0  0  0  4  2  2  0  0  2  2  4  0  0  0  0  0
+  c:  0  0  0  0  0  6  2  0  2  2  0  0  2  0  2  0
+  d:  0  4  4  0  2  2  0  0  2  2  0  0  0  0  0  0
+  e:  0  0  4  2  0  0  0  2  4  0  0  2  0  0  0  2
+  f:  0  0  0  0  2  0  2  0  0  0  0  0  2  0  2  8
+    LAT (rows: input mask/difference, columns: output)
+      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+  0:  8  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+  1:  0  0 -2  2 -2 -2  0 -4  2 -2  0  0  0 -4  2  2
+  2:  0  0  4  0 -2 -2  2 -2  2 -2  2  2  0  4  0  0
+  3:  0  0  2  2  0  0 -2 -2  0  0 -2 -2  0  0  2 -6
+  4:  0  0  0  0 -2 -2  2  2 -2 -2  2 -6  0  0  0  0
+  5:  0  0  2 -2  0  0  2 -2  0  4 -2 -2  4  0  2  2
+  6:  0  0  0 -4  0  0 -4  0  0 -4  0  0  4  0  0  0
+  7:  0  0  2  2  6 -2  0  0 -2 -2  0  0  0  0  2  2
+  8:  0  0  0  0 -2  2 -2  2  0  0  0  0 -2  2  6  2
+  9:  0  4 -2 -2  0  0  2 -2 -2 -2 -4  0 -2  2  0  0
+  a:  0  0  0  4  0  4  0  0  2 -2 -2 -2  2  2 -2  2
+  b:  0 -4 -2  2 -2 -2  0  0 -4  0 -2  2  2  2  0  0
+  c:  0  0  0  0  0 -4 -4  0  2  2 -2 -2 -2  2 -2  2
+  d:  0  4  2  2 -2 -2  0  4  0  0 -2  2  2 -2  0  0
+  e:  0  0  4  0 -2  2 -2 -2 -4  0  0  0 -2 -2 -2  2
+  f:  0  4 -2  2  0  0 -2 -2 -2  2  4  0  2  2  0  0
+
+[2] PRESENT: differential uniformity 4 (max probability 4/16), entries equal to it: 24
+    PRESENT: max |LAT| 4 (max bias 4/16), entries equal to it: 36
+    PRESENT: single-bit -> single-bit differential transitions (a, b, DDT): none
+    PRESENT: single-bit -> single-bit linear approximations (a, b, LAT): [(2, 2, 2), (2, 4, -2), (2, 8, 2), (4, 2, -2), (4, 4, -2), (4, 8, -2), (8, 2, 2), (8, 8, -2)]
+
+[3] Permutation (Table 1)
+  P(i) = 16*(i mod 4) + floor(i/4): True
+  same as PRESENT pLayer P(i) = 16 i mod 63 (i<63), P(63)=63: True
+  fixed points: [0, 21, 42, 63]
+  order of P: 3
+
+[4] The example in Sect. 4 (Differential Cryptanalysis)
+  P1 xor P2 = 000000000000000f  (4 bits; the text says "just one-bit difference")
+  C1 xor C2 = a5cead61d63e2b41  (33 bits)
+  P1 as ASCII: 'Aruna KG'  P2: 'Aruna KH'
+  no key is given, so these are not test vectors; trying a few obvious keys under every reading:
+  tried 11 keys x 32 readings x 2 byte orders: 0 matches
+
+[5] Decryption as written in Sect. 3B (same substitution layer, inverse permutation, reversed keys)
+  literal reading fails to decrypt in 100/100 random cases; with the inverse S-box it succeeds in 100 /100
+
+[6] Last round: no key follows the last S-layer and permutation
+  S^-1(P^-1(C)) == state after 30 rounds xor K_31: True
+
+[7] One-active-S-box-per-round transitions at the fixed points of P (checked on the implementation)
+  differential e_0 -> e_0 over 3 rounds: 133/65536 pairs, expected (2/16)^3 * N = 128
+  linear  e_21 -> e_21 over 3 rounds: |correlation| = 0.1252, expected (4/8)^3 = 0.1250 (sign depends on the key)
+
+[8] The four S-box conditions of PRESENT (Bogdanov et al., CHES 2007, Sect. 4), Walsh value = 2 * LAT
+  PRESENT: (1) DDT <= 4: True;  (2) no 1-bit -> 1-bit differential: True ;  (3) |Walsh| <= 8: True;  (4*) 1-bit |Walsh| <= 4: True 
+  EE-LBC: (1) DDT <= 4: False;  (2) no 1-bit -> 1-bit differential: False [(1, 1)];  (3) |Walsh| <= 8: False;  (4*) 1-bit |Walsh| <= 4: False [(2, 2, 8)]
+
+[9] With the PRESENT S-box, the PRESENT readings of (ii)-(iii) and a final key, EE-LBC is PRESENT-80
+  all four test vectors of PRESENT-80 (Bogdanov et al., App. I) reproduced: True
+  EE-LBC itself unchanged: E_0(0) = 1b7b51a05ea03b5c (expected 1b7b51a05ea03b5c)

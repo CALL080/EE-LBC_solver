@@ -1,0 +1,86 @@
+lin  r= 4 layers= 3 N=2^14 seed=1 ks     corr=+1.209717e-01  log2|c|= -3.047  expected log2|c|=-3  (sigma=2^-7.0)
+lin  r= 4 layers= 3 N=2^14 seed=2 ks     corr=+1.170654e-01  log2|c|= -3.095  expected log2|c|=-3  (sigma=2^-7.0)
+lin  r= 4 layers= 3 N=2^14 seed=3 ks     corr=-1.230469e-01  log2|c|= -3.023  expected log2|c|=-3  (sigma=2^-7.0)
+lin  r= 4 layers= 3 N=2^14 seed=4 ks     corr=+1.326904e-01  log2|c|= -2.914  expected log2|c|=-3  (sigma=2^-7.0)
+lin  r= 4 layers= 3 N=2^14 seed=5 indep  corr=-1.215820e-01  log2|c|= -3.040  expected log2|c|=-3  (sigma=2^-7.0)
+lin  r= 4 layers= 3 N=2^14 seed=6 indep  corr=-1.215820e-01  log2|c|= -3.040  expected log2|c|=-3  (sigma=2^-7.0)
+lin  r= 5 layers= 4 N=2^16 seed=1 ks     corr=-6.106567e-02  log2|c|= -4.033  expected log2|c|=-4  (sigma=2^-8.0)
+lin  r= 5 layers= 4 N=2^16 seed=2 ks     corr=-5.740356e-02  log2|c|= -4.123  expected log2|c|=-4  (sigma=2^-8.0)
+lin  r= 5 layers= 4 N=2^16 seed=3 ks     corr=+6.335449e-02  log2|c|= -3.980  expected log2|c|=-4  (sigma=2^-8.0)
+lin  r= 5 layers= 4 N=2^16 seed=4 ks     corr=+5.090332e-02  log2|c|= -4.296  expected log2|c|=-4  (sigma=2^-8.0)
+lin  r= 5 layers= 4 N=2^16 seed=5 indep  corr=-6.011963e-02  log2|c|= -4.056  expected log2|c|=-4  (sigma=2^-8.0)
+lin  r= 5 layers= 4 N=2^16 seed=6 indep  corr=-6.512451e-02  log2|c|= -3.941  expected log2|c|=-4  (sigma=2^-8.0)
+lin  r= 6 layers= 5 N=2^18 seed=1 ks     corr=-2.433777e-02  log2|c|= -5.361  expected log2|c|=-5  (sigma=2^-9.0)
+lin  r= 6 layers= 5 N=2^18 seed=2 ks     corr=+3.546906e-02  log2|c|= -4.817  expected log2|c|=-5  (sigma=2^-9.0)
+lin  r= 6 layers= 5 N=2^18 seed=3 ks     corr=+3.837585e-02  log2|c|= -4.704  expected log2|c|=-5  (sigma=2^-9.0)
+lin  r= 6 layers= 5 N=2^18 seed=4 ks     corr=-2.761841e-02  log2|c|= -5.178  expected log2|c|=-5  (sigma=2^-9.0)
+lin  r= 6 layers= 5 N=2^18 seed=5 indep  corr=-3.060913e-02  log2|c|= -5.030  expected log2|c|=-5  (sigma=2^-9.0)
+lin  r= 6 layers= 5 N=2^18 seed=6 indep  corr=+2.740479e-02  log2|c|= -5.189  expected log2|c|=-5  (sigma=2^-9.0)
+lin  r= 7 layers= 6 N=2^20 seed=1 ks     corr=-1.374817e-02  log2|c|= -6.185  expected log2|c|=-6  (sigma=2^-10.0)
+lin  r= 7 layers= 6 N=2^20 seed=2 ks     corr=+1.677132e-02  log2|c|= -5.898  expected log2|c|=-6  (sigma=2^-10.0)
+lin  r= 7 layers= 6 N=2^20 seed=3 ks     corr=-1.936722e-02  log2|c|= -5.690  expected log2|c|=-6  (sigma=2^-10.0)
+lin  r= 7 layers= 6 N=2^20 seed=4 ks     corr=+1.437187e-02  log2|c|= -6.121  expected log2|c|=-6  (sigma=2^-10.0)
+lin  r= 7 layers= 6 N=2^20 seed=5 indep  corr=+1.599884e-02  log2|c|= -5.966  expected log2|c|=-6  (sigma=2^-10.0)
+lin  r= 7 layers= 6 N=2^20 seed=6 indep  corr=-1.230049e-02  log2|c|= -6.345  expected log2|c|=-6  (sigma=2^-10.0)
+lin  r= 8 layers= 7 N=2^22 seed=1 ks     corr=-6.949902e-03  log2|c|= -7.169  expected log2|c|=-7  (sigma=2^-11.0)
+lin  r= 8 layers= 7 N=2^22 seed=2 ks     corr=+9.080410e-03  log2|c|= -6.783  expected log2|c|=-7  (sigma=2^-11.0)
+lin  r= 8 layers= 7 N=2^22 seed=3 ks     corr=-1.062155e-02  log2|c|= -6.557  expected log2|c|=-7  (sigma=2^-11.0)
+lin  r= 8 layers= 7 N=2^22 seed=4 ks     corr=-6.217957e-03  log2|c|= -7.329  expected log2|c|=-7  (sigma=2^-11.0)
+lin  r= 8 layers= 7 N=2^22 seed=5 indep  corr=+6.594658e-03  log2|c|= -7.244  expected log2|c|=-7  (sigma=2^-11.0)
+lin  r= 8 layers= 7 N=2^22 seed=6 indep  corr=-6.142616e-03  log2|c|= -7.347  expected log2|c|=-7  (sigma=2^-11.0)
+lin  r= 9 layers= 8 N=2^24 seed=1 ks     corr=-3.682852e-03  log2|c|= -8.085  expected log2|c|=-8  (sigma=2^-12.0)
+lin  r= 9 layers= 8 N=2^24 seed=2 ks     corr=-4.694819e-03  log2|c|= -7.735  expected log2|c|=-8  (sigma=2^-12.0)
+lin  r= 9 layers= 8 N=2^24 seed=3 ks     corr=+5.762219e-03  log2|c|= -7.439  expected log2|c|=-8  (sigma=2^-12.0)
+lin  r= 9 layers= 8 N=2^24 seed=4 ks     corr=-2.630830e-03  log2|c|= -8.570  expected log2|c|=-8  (sigma=2^-12.0)
+lin  r= 9 layers= 8 N=2^24 seed=5 indep  corr=-4.188538e-03  log2|c|= -7.899  expected log2|c|=-8  (sigma=2^-12.0)
+lin  r= 9 layers= 8 N=2^24 seed=6 indep  corr=-2.892375e-03  log2|c|= -8.434  expected log2|c|=-8  (sigma=2^-12.0)
+lin  r=10 layers= 9 N=2^26 seed=1 ks     corr=+1.545221e-03  log2|c|= -9.338  expected log2|c|=-9  (sigma=2^-13.0)
+lin  r=10 layers= 9 N=2^26 seed=2 ks     corr=-2.011657e-03  log2|c|= -8.957  expected log2|c|=-9  (sigma=2^-13.0)
+lin  r=10 layers= 9 N=2^26 seed=3 ks     corr=+3.221780e-03  log2|c|= -8.278  expected log2|c|=-9  (sigma=2^-13.0)
+lin  r=10 layers= 9 N=2^26 seed=4 ks     corr=+1.180857e-03  log2|c|= -9.726  expected log2|c|=-9  (sigma=2^-13.0)
+lin  r=10 layers= 9 N=2^26 seed=5 indep  corr=-2.018750e-03  log2|c|= -8.952  expected log2|c|=-9  (sigma=2^-13.0)
+lin  r=10 layers= 9 N=2^26 seed=6 indep  corr=+1.050323e-03  log2|c|= -9.895  expected log2|c|=-9  (sigma=2^-13.0)
+lin  r=11 layers=10 N=2^28 seed=1 ks     corr=+5.637929e-04  log2|c|=-10.793  expected log2|c|=-10  (sigma=2^-14.0)
+lin  r=11 layers=10 N=2^28 seed=2 ks     corr=-9.665787e-04  log2|c|=-10.015  expected log2|c|=-10  (sigma=2^-14.0)
+lin  r=11 layers=10 N=2^28 seed=3 ks     corr=+1.804993e-03  log2|c|= -9.114  expected log2|c|=-10  (sigma=2^-14.0)
+lin  r=11 layers=10 N=2^28 seed=4 ks     corr=+5.440414e-04  log2|c|=-10.844  expected log2|c|=-10  (sigma=2^-14.0)
+lin  r=11 layers=10 N=2^28 seed=5 indep  corr=-1.159742e-03  log2|c|= -9.752  expected log2|c|=-10  (sigma=2^-14.0)
+lin  r=11 layers=10 N=2^28 seed=6 indep  corr=+4.674122e-04  log2|c|=-11.063  expected log2|c|=-10  (sigma=2^-14.0)
+lin  r=12 layers=11 N=2^30 seed=1 ks     corr=-2.917890e-04  log2|c|=-11.743  expected log2|c|=-11  (sigma=2^-15.0)
+lin  r=12 layers=11 N=2^30 seed=2 ks     corr=-5.547162e-04  log2|c|=-10.816  expected log2|c|=-11  (sigma=2^-15.0)
+lin  r=12 layers=11 N=2^30 seed=3 ks     corr=-9.438843e-04  log2|c|=-10.049  expected log2|c|=-11  (sigma=2^-15.0)
+lin  r=12 layers=11 N=2^30 seed=4 ks     corr=-1.996830e-04  log2|c|=-12.290  expected log2|c|=-11  (sigma=2^-15.0)
+lin  r=12 layers=11 N=2^30 seed=5 indep  corr=-4.809517e-04  log2|c|=-11.022  expected log2|c|=-11  (sigma=2^-15.0)
+lin  r=12 layers=11 N=2^30 seed=6 indep  corr=+2.565738e-04  log2|c|=-11.928  expected log2|c|=-11  (sigma=2^-15.0)
+lin  r=13 layers=12 N=2^32 seed=1 ks     corr=+2.085147e-04  log2|c|=-12.228  expected log2|c|=-12  (sigma=2^-16.0)
+lin  r=13 layers=12 N=2^32 seed=2 ks     corr=+3.899112e-04  log2|c|=-11.325  expected log2|c|=-12  (sigma=2^-16.0)
+lin  r=13 layers=12 N=2^32 seed=3 ks     corr=+4.725512e-04  log2|c|=-11.047  expected log2|c|=-12  (sigma=2^-16.0)
+lin  r=13 layers=12 N=2^32 seed=4 ks     corr=-1.450833e-04  log2|c|=-12.751  expected log2|c|=-12  (sigma=2^-16.0)
+lin  r=13 layers=12 N=2^32 seed=5 indep  corr=+2.077091e-04  log2|c|=-12.233  expected log2|c|=-12  (sigma=2^-16.0)
+lin  r=13 layers=12 N=2^32 seed=6 indep  corr=-1.066141e-04  log2|c|=-13.195  expected log2|c|=-12  (sigma=2^-16.0)
+lin  r=14 layers=13 N=2^34 seed=1 ks     corr=-7.584877e-05  log2|c|=-13.687  expected log2|c|=-13  (sigma=2^-17.0)
+lin  r=14 layers=13 N=2^34 seed=2 ks     corr=+1.715521e-04  log2|c|=-12.509  expected log2|c|=-13  (sigma=2^-17.0)
+diff r= 3 layers= 2 N=2^14 seed=1 ks     hits=268  log2(p)= -5.934  expected 1-bit trail log2(p)=-6
+diff r= 3 layers= 2 N=2^14 seed=2 ks     hits=249  log2(p)= -6.040  expected 1-bit trail log2(p)=-6
+diff r= 3 layers= 2 N=2^14 seed=3 ks     hits=278  log2(p)= -5.881  expected 1-bit trail log2(p)=-6
+diff r= 3 layers= 2 N=2^14 seed=4 ks     hits=262  log2(p)= -5.967  expected 1-bit trail log2(p)=-6
+diff r= 4 layers= 3 N=2^17 seed=1 ks     hits=253  log2(p)= -9.017  expected 1-bit trail log2(p)=-9
+diff r= 4 layers= 3 N=2^17 seed=2 ks     hits=232  log2(p)= -9.142  expected 1-bit trail log2(p)=-9
+diff r= 4 layers= 3 N=2^17 seed=3 ks     hits=273  log2(p)= -8.907  expected 1-bit trail log2(p)=-9
+diff r= 4 layers= 3 N=2^17 seed=4 ks     hits=295  log2(p)= -8.795  expected 1-bit trail log2(p)=-9
+diff r= 5 layers= 4 N=2^20 seed=1 ks     hits=255  log2(p)=-12.006  expected 1-bit trail log2(p)=-12
+diff r= 5 layers= 4 N=2^20 seed=2 ks     hits=255  log2(p)=-12.006  expected 1-bit trail log2(p)=-12
+diff r= 5 layers= 4 N=2^20 seed=3 ks     hits=243  log2(p)=-12.075  expected 1-bit trail log2(p)=-12
+diff r= 5 layers= 4 N=2^20 seed=4 ks     hits=259  log2(p)=-11.983  expected 1-bit trail log2(p)=-12
+diff r= 6 layers= 5 N=2^23 seed=1 ks     hits=254  log2(p)=-15.011  expected 1-bit trail log2(p)=-15
+diff r= 6 layers= 5 N=2^23 seed=2 ks     hits=265  log2(p)=-14.950  expected 1-bit trail log2(p)=-15
+diff r= 6 layers= 5 N=2^23 seed=3 ks     hits=214  log2(p)=-15.259  expected 1-bit trail log2(p)=-15
+diff r= 6 layers= 5 N=2^23 seed=4 ks     hits=270  log2(p)=-14.923  expected 1-bit trail log2(p)=-15
+diff r= 7 layers= 6 N=2^26 seed=1 ks     hits=278  log2(p)=-17.881  expected 1-bit trail log2(p)=-18
+diff r= 7 layers= 6 N=2^26 seed=2 ks     hits=251  log2(p)=-18.028  expected 1-bit trail log2(p)=-18
+diff r= 7 layers= 6 N=2^26 seed=3 ks     hits=254  log2(p)=-18.011  expected 1-bit trail log2(p)=-18
+diff r= 7 layers= 6 N=2^26 seed=4 ks     hits=294  log2(p)=-17.800  expected 1-bit trail log2(p)=-18
+diff r= 8 layers= 7 N=2^29 seed=1 ks     hits=275  log2(p)=-20.897  expected 1-bit trail log2(p)=-21
+diff r= 8 layers= 7 N=2^29 seed=2 ks     hits=261  log2(p)=-20.972  expected 1-bit trail log2(p)=-21
+diff r= 8 layers= 7 N=2^29 seed=3 ks     hits=234  log2(p)=-21.130  expected 1-bit trail log2(p)=-21
+diff r= 8 layers= 7 N=2^29 seed=4 ks     hits=279  log2(p)=-20.876  expected 1-bit trail log2(p)=-21

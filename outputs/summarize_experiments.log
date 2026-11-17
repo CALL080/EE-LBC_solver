@@ -1,0 +1,45 @@
+[1] Linear: p[21] xor y[21] over r rounds (r-1 layers); per key log2|c|, and log2 of the mean c^2
+  r= 4 layers= 3 N=2^14 predicted   -3  measured [-3.09, -2.91]  sqrt(mean c^2)=2^-3.02  (6 keys; i = independent round keys): -3.05 -3.09 -3.02 -2.91 i-3.04 i-3.04
+  r= 5 layers= 4 N=2^16 predicted   -4  measured [-4.30, -3.94]  sqrt(mean c^2)=2^-4.06  (6 keys; i = independent round keys): -4.03 -4.12 -3.98 -4.30 i-4.06 i-3.94
+  r= 6 layers= 5 N=2^18 predicted   -5  measured [-5.36, -4.70]  sqrt(mean c^2)=2^-5.01  (6 keys; i = independent round keys): -5.36 -4.82 -4.70 -5.18 i-5.03 i-5.19
+  r= 7 layers= 6 N=2^20 predicted   -6  measured [-6.35, -5.69]  sqrt(mean c^2)=2^-6.00  (6 keys; i = independent round keys): -6.18 -5.90 -5.69 -6.12 i-5.97 i-6.35
+  r= 8 layers= 7 N=2^22 predicted   -7  measured [-7.35, -6.56]  sqrt(mean c^2)=2^-7.01  (6 keys; i = independent round keys): -7.17 -6.78 -6.56 -7.33 i-7.24 i-7.35
+  r= 9 layers= 8 N=2^24 predicted   -8  measured [-8.57, -7.44]  sqrt(mean c^2)=2^-7.92  (6 keys; i = independent round keys): -8.08 -7.73 -7.44 -8.57 i-7.90 i-8.43
+  r=10 layers= 9 N=2^26 predicted   -9  measured [-9.89, -8.28]  sqrt(mean c^2)=2^-8.98  (6 keys; i = independent round keys): -9.34 -8.96 -8.28 -9.73 i-8.95 i-9.89
+  r=11 layers=10 N=2^28 predicted  -10  measured [-11.06, -9.11]  sqrt(mean c^2)=2^-9.92  (6 keys; i = independent round keys): -10.79 -10.01 -9.11 -10.84 i-9.75 i-11.06
+  r=12 layers=11 N=2^30 predicted  -11  measured [-12.29, -10.05]  sqrt(mean c^2)=2^-10.91  (6 keys; i = independent round keys): -11.74 -10.82 -10.05 -12.29 i-11.02 i-11.93
+  r=13 layers=12 N=2^32 predicted  -12  measured [-13.20, -11.05]  sqrt(mean c^2)=2^-11.77  (6 keys; i = independent round keys): -12.23 -11.32 -11.05 -12.75 i-12.23 i-13.20
+  r=14 layers=13 N=2^34 predicted  -13  measured [-13.69, -12.51]  sqrt(mean c^2)=2^-12.88  (2 keys; i = independent round keys): -13.69 -12.51
+
+[2] Differential: (p, p xor 1) -> y-difference 1 over r-1 layers; predicted 2^(-3(r-1)) for the 1-bit trail
+  r=3 layers=2 predicted 2^-6  measured 2^-5.95  (1057 hits in 4 keys)
+  r=4 layers=3 predicted 2^-9  measured 2^-8.96  (1053 hits in 4 keys)
+  r=5 layers=4 predicted 2^-12  measured 2^-12.02  (1012 hits in 4 keys)
+  r=6 layers=5 predicted 2^-15  measured 2^-15.03  (1003 hits in 4 keys)
+  r=7 layers=6 predicted 2^-18  measured 2^-17.93  (1077 hits in 4 keys)
+  r=8 layers=7 predicted 2^-21  measured 2^-20.97  (1049 hits in 4 keys)
+
+[3] Key recovery (20-bit guess; r rounds = 2 guessed + L = r-3 trail rounds + 1 keyless): rank of the correct key
+  keyrec_r12_32seeds.log: r=12 L=9 N=2^23 (= 2^5/c^2): rank 1 in 13/32, rank <= 2^10 in 25/32, ranks [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 6, 7, 8, 9, 9, 25, 38, 215, 231, 1158, 1343, 1712, 2549, 3639, 9557, 22517]
+  keyrec_r12_32seeds.log: r=12 L=9 N=2^24 (= 2^6/c^2): rank 1 in 24/32, rank <= 2^10 in 31/32, ranks [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 12, 74, 4048]
+  keyrec_r12_32seeds.log: r=12 L=9 N=2^25 (= 2^7/c^2): rank 1 in 30/32, rank <= 2^10 in 32/32, ranks [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2]
+  keyrec_longer.log: r=14 L=11 N=2^28 (= 2^6/c^2): rank 1 in 12/16, rank <= 2^10 in 16/16, ranks [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 5, 29, 653]
+  keyrec_longer.log: r=16 L=13 N=2^32 (= 2^6/c^2): rank 1 in 12/16, rank <= 2^10 in 15/16, ranks [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 207, 8463]
+
+[4] Spread of the correlation over 16 keys (key schedule): quartiles of log2|c| against the prediction -L
+  L= 8 (16 keys): min -8.67  Q1 -8.30  median -7.96  Q3 -7.94  max -7.65   predicted -8
+  L=10 (16 keys): min -11.49  Q1 -10.26  median -10.18  Q3 -10.06  max -9.57   predicted -10
+  L=12 (16 keys): min -14.66  Q1 -12.89  median -12.38  Q3 -11.92  max -11.63   predicted -12
+
+[5] Fixed-key hull (fixedhull.c, masks with <= 2 active S-boxes) against the measured correlations of the same keys
+  L= 8: 16 keys, same sign 16/16, |log2(measured/predicted)| median 0.24, max 0.61
+  L=10: 16 keys, same sign 16/16, |log2(measured/predicted)| median 0.18, max 0.88
+  L=12: 16 keys, same sign 16/16, |log2(measured/predicted)| median 0.31, max 0.97
+  distribution over 2000 keys (log2|c| + L):
+    stats L= 8 keys=2000  log2|c|+L: min -1.55  Q1 -0.26  median -0.01  Q3 +0.21  max +0.77;  fraction >= 0: 0.490, >= -0.5: 0.884, >= -1: 0.977
+    stats L=10 keys=2000  log2|c|+L: min -4.99  Q1 -0.32  median -0.01  Q3 +0.26  max +0.89;  fraction >= 0: 0.491, >= -0.5: 0.841, >= -1: 0.947
+    stats L=12 keys=2000  log2|c|+L: min -6.58  Q1 -0.39  median -0.00  Q3 +0.29  max +1.09;  fraction >= 0: 0.498, >= -0.5: 0.789, >= -1: 0.921
+    stats L=13 keys=2000  log2|c|+L: min -8.41  Q1 -0.43  median +0.00  Q3 +0.33  max +1.07;  fraction >= 0: 0.500, >= -0.5: 0.775, >= -1: 0.902
+    stats L=20 keys=2000  log2|c|+L: min -7.36  Q1 -0.69  median -0.03  Q3 +0.47  max +1.66;  fraction >= 0: 0.485, >= -0.5: 0.687, >= -1: 0.822
+    stats L=28 keys=2000  log2|c|+L: min -10.59  Q1 -1.01  median -0.13  Q3 +0.53  max +2.40;  fraction >= 0: 0.450, >= -0.5: 0.617, >= -1: 0.747
+    stats L=30 keys=2000  log2|c|+L: min -12.41  Q1 -1.07  median -0.17  Q3 +0.54  max +2.28;  fraction >= 0: 0.443, >= -0.5: 0.616, >= -1: 0.738
