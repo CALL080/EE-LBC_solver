@@ -10,6 +10,7 @@ gcc -O3 -march=native -o bin/matsui matsui.c -lm
 gcc -O3 -o bin/hull hull.c -lm
 gcc -O3 -march=native -fopenmp -o bin/experiments experiments.c -lm
 gcc -O3 -march=native -fopenmp -o bin/fixedhull fixedhull.c -lm
+gcc -O3 -o bin/wrongkeys wrongkeys.c -lm
 
 $PY eelbc.py > outputs/eelbc_selftest.log
 $PY check_spec.py > outputs/check_spec.log
@@ -32,6 +33,14 @@ bin/hull present lin 21 21 31 > outputs/hull_present_lin_21.log
 # Sect. 4.3: fixed-key hull for the keys of corr_16keys.log, and its distribution over 2000 keys
 { for L in 8 10 12; do bin/fixedhull check $L 201 216; done; } > outputs/fixedhull_check.log
 { for L in 8 10 12 13 20 28 30; do bin/fixedhull stats $L 2000; done; } > outputs/fixedhull_stats.log
+# Sect. 4.3, Table 4: the distribution over 10000 keys for the round keys that the attacks use (off = 2: rounds 3..30,
+# key recovery; off = 0: rounds 1..30, distinguisher), and the prediction for the keys of the key-recovery runs of
+# Table 5 (rounds 3..r-1)
+{ bin/fixedhull stats 28 10000 2; bin/fixedhull stats 28 10000 0; bin/fixedhull stats 30 10000 0; } > outputs/fixedhull_stats_window.log
+{ bin/fixedhull check 9 101 132 2; bin/fixedhull check 11 301 316 2; bin/fixedhull check 13 301 316 2; } > outputs/fixedhull_check_keyrec.log
+
+# Sect. 4.2: correlation rho between the bits x_{2,21} that a wrong and the correct 20-bit guess predict (six correct guesses)
+bin/wrongkeys 6 7 > outputs/wrongkeys.log
 
 if [ "${1:-}" = "--full" ]; then
   # Table 3: linear r = 4..13 (four keys with the key schedule, two with independent round keys), r = 14 (two keys);
@@ -54,5 +63,6 @@ fi
 $PY complexity.py > outputs/complexity.log
 
 $PY summarize_experiments.py > outputs/summarize_experiments.log
+$PY check_keyrec_hull.py > outputs/check_keyrec_hull.log
 $PY make_figs.py > /dev/null
 echo "done; see outputs/"

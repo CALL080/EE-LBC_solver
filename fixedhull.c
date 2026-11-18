@@ -5,8 +5,10 @@
  * with the measured correlations, which also carry the sign (-1)^{K_{L+1}[21]} of the last key addition.
  *
  *   gcc -O3 -march=native -fopenmp -o fixedhull fixedhull.c -lm
- *   ./fixedhull check <L> <seed_from> <seed_to>     signed prediction of the measured correlation for these seeds
- *   ./fixedhull stats <L> <nkeys>                    quantiles of log2|c| + L over nkeys keys (seeds 1000000..)
+ *   ./fixedhull check <L> <seed_from> <seed_to> [off]  signed prediction of the measured correlation for these seeds
+ *   ./fixedhull stats <L> <nkeys> [off]                quantiles of log2|c| + L over nkeys keys (seeds 1000000..)
+ * off (default 0): the trail uses the round keys K_{off+1}..K_{off+L}; off = 2 is the window of the key recovery
+ * (rounds 3..30 for L = 28).  For check, off = 2 matches the keyrec mode of experiments.c (same seeds).
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -113,18 +115,18 @@ int main(int argc, char **argv) {
     }
     int L = atoi(argv[2]);
     if (strcmp(argv[1], "check") == 0) {
-        int from = atoi(argv[3]), upto = argc > 4 ? atoi(argv[4]) : from;
+        int from = atoi(argv[3]), upto = argc > 4 ? atoi(argv[4]) : from, off = argc > 5 ? atoi(argv[5]) : 0;
         double *v = malloc(NST * sizeof(double)), *nv = malloc(NST * sizeof(double));
         for (int seed = from; seed <= upto; seed++) {
             uint64_t s = (uint64_t)seed, rk[32];
             uint64_t khi = splitmix(&s) & 0xFFFF, klo = splitmix(&s);
             round_keys(khi, klo, 31, rk);
-            double c = hull(L, rk, v, nv);
-            double meas = ((rk[L] >> 21) & 1) ? -c : c;   /* sign of the key bit added before the stripped round */
-            printf("check L=%2d seed=%d  predicted corr=%+.6e  log2|c|+L=%+.3f\n", L, seed, meas, log2(fabs(c)) + L);
+            double c = hull(L, rk + off, v, nv);
+            double meas = ((rk[off + L] >> 21) & 1) ? -c : c;   /* sign of the key bit added before the stripped round */
+            printf("check L=%2d off=%d seed=%d  predicted corr=%+.6e  log2|c|+L=%+.3f\n", L, off, seed, meas, log2(fabs(c)) + L);
         }
     } else {
-        int nk = atoi(argv[3]);
+        int nk = atoi(argv[3]), off = argc > 4 ? atoi(argv[4]) : 0;
         double *res = malloc(nk * sizeof(double));
 #pragma omp parallel
         {
@@ -134,15 +136,15 @@ int main(int argc, char **argv) {
                 uint64_t s = 1000000ULL + i, rk[32];
                 uint64_t khi = splitmix(&s) & 0xFFFF, klo = splitmix(&s);
                 round_keys(khi, klo, 31, rk);
-                res[i] = log2(fabs(hull(L, rk, v, nv))) + L;
+                res[i] = log2(fabs(hull(L, rk + off, v, nv))) + L;
             }
         }
         int cmp(const void *a, const void *b) { double x = *(const double *)a, y = *(const double *)b; return (x > y) - (x < y); }
         qsort(res, nk, sizeof(double), cmp);
         int ge0 = 0, gem05 = 0, gem1 = 0;
         for (int i = 0; i < nk; i++) { ge0 += res[i] >= 0; gem05 += res[i] >= -0.5; gem1 += res[i] >= -1; }
-        printf("stats L=%2d keys=%d  log2|c|+L: min %+.2f  Q1 %+.2f  median %+.2f  Q3 %+.2f  max %+.2f;"
-               "  fraction >= 0: %.3f, >= -0.5: %.3f, >= -1: %.3f\n", L, nk, res[0], res[nk / 4], res[nk / 2], res[3 * nk / 4],
+        printf("stats L=%2d off=%d keys=%d  log2|c|+L: min %+.2f  Q1 %+.2f  median %+.2f  Q3 %+.2f  max %+.2f;"
+               "  fraction >= 0: %.3f, >= -0.5: %.3f, >= -1: %.3f\n", L, off, nk, res[0], res[nk / 4], res[nk / 2], res[3 * nk / 4],
                res[nk - 1], (double)ge0 / nk, (double)gem05 / nk, (double)gem1 / nk);
     }
     return 0;

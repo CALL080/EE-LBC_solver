@@ -29,11 +29,17 @@ for a in (10, 16, 20):
               f' exhaustive part = 2^{log2(t_list):.0f} encryptions; counters 2^17; evaluation 2^{m + 16} table look-ups')
 
 print('\n[3] Distinguisher on the full 31 rounds without key guess, L = 30, |c| = 2^-30')
+# Test: accept "EE-LBC" if |empirical correlation| > c/2.  Z = sqrt(N) * empirical correlation, d = sqrt(N) |c|, t = d/2.
+# False positive (random permutation, Z ~ N(0,1)): two-sided, 2 Phi(-t).
+# False negative (cipher, Z ~ N(+-d, v)): Phi((t-d)/sqrt(v)) - Phi((-t-d)/sqrt(v)); v = 1 for independent plaintexts and
+# v = 1 - N/2^64 for distinct plaintexts (sampling without replacement); the random-permutation variance stays about 1.
 c = 2.0 ** -30
 for lgN in (60, 61, 62, 63):
-    s = (c / 2) * (2 ** lgN) ** 0.5                         # threshold c/2 on |empirical correlation|
-    err = NormalDist().cdf(-s)
-    print(f'  N = 2^{lgN}: both error probabilities about {err:.3f} (threshold |c|/2)')
+    d = c * (2 ** lgN) ** 0.5
+    t = d / 2
+    fp = 2 * NormalDist().cdf(-t)
+    fn = [NormalDist().cdf((t - d) / v ** 0.5) - NormalDist().cdf((-t - d) / v ** 0.5) for v in (1.0, 1 - 2 ** (lgN - 64))]
+    print(f'  N = 2^{lgN}: false positive {fp:.3f}; false negative {fn[0]:.3f} (independent), {fn[1]:.3f} (distinct plaintexts)')
 
 print('\n[4] Rounds needed for the best single trail to fall below 2^-64 (B_R = 2R for R >= 8, last round keyless)')
 R = next(r for r in range(8, 64) if 2 * r > 64)
@@ -91,19 +97,23 @@ for L in (8, 10, 12, 28, 30):
                  f'{frac_above(2 ** -0.5, ratio):.2f}, >= 2^-(L+1): {frac_above(0.5, ratio):.2f}')
     print(line)
 
-print('\n[6] Median complexities (Leander, EUROCRYPT 2011, Definition 1) from the fixed-key hull over 2000 keys')
-# outputs/fixedhull_stats.log: distribution of log2|c| + L; fixedhull.c reproduces the measured correlations
-# of 48 keys at L = 8, 10, 12 (summarize_experiments.log [5]).  For half of the keys |c| >= c_med.
+print('\n[6] Median complexities (Leander, EUROCRYPT 2011, Definition 1) from the fixed-key hull over 10000 keys')
+# outputs/fixedhull_stats_window.log: distribution of log2|c| + L over the round keys that the attacks use:
+# rounds 3..30 (off = 2) for the key recovery, rounds 1..30 (off = 0) for the distinguisher.
+# fixedhull.c reproduces the measured correlations at L = 8..13 (summarize_experiments.log [5], check_keyrec_hull.log [1]).
 med = {}
-for line in open(os.path.join(here, 'outputs', 'fixedhull_stats.log')):
-    m = re.match(r'stats L=\s*(\d+) keys=\d+.*median ([+-][\d.]+)', line)
+for line in open(os.path.join(here, 'outputs', 'fixedhull_stats_window.log')):
+    m = re.match(r'stats L=\s*(\d+) off=(\d+) keys=\d+.*median ([+-][\d.]+)', line)
     if m:
-        med[int(m.group(1))] = float(m.group(2))
-lc = -28 + med[28]
-print(f'  key recovery, L = 28: median log2|c| = {lc:.2f}; N = 2^6/c^2 = 2^{6 - 2 * lc:.2f}, N = 2^7/c^2 = 2^{7 - 2 * lc:.2f}'
-      ' (measured success at these N c^2: Table 5)')
-ld = -30 + med[30]
+        med[(int(m.group(1)), int(m.group(2)))] = float(m.group(3))
+lc = -28 + med[(28, 2)]
+print(f'  key recovery, rounds 3..30: median log2|c| = {lc:.2f}; N = 2^6/c^2 = 2^{6 - 2 * lc:.2f}, N = 2^7/c^2 = 2^{7 - 2 * lc:.2f}'
+      ' (success measured for keys with N c^2 >= 2^6: check_keyrec_hull.log [2])')
+ld = -30 + med[(30, 0)]
 for lgN in (62, 63):
-    err = ND.cdf(-(2 ** ld / 2) * 2 ** (lgN / 2))
-    print(f'  distinguisher, L = 30: median log2|c| = {ld:.2f}; with N = 2^{lgN} and threshold |c_med|/2, '
-          f'both error probabilities at most {err:.3f} for half of the keys')
+    d = 2 ** ld * 2 ** (lgN / 2)
+    t = d / 2
+    fp = 2 * ND.cdf(-t)
+    fn = [ND.cdf((t - d) / v ** 0.5) - ND.cdf((-t - d) / v ** 0.5) for v in (1.0, 1 - 2 ** (lgN - 64))]
+    print(f'  distinguisher, rounds 1..30: median log2|c| = {ld:.2f}; N = 2^{lgN}, threshold |c_med|/2: false positive {fp:.3f};'
+          f' false negative at most {fn[0]:.3f} (independent), {fn[1]:.3f} (distinct plaintexts) for half of the keys')

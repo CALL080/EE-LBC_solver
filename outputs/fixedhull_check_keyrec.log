@@ -1,0 +1,64 @@
+check L= 9 off=2 seed=101  predicted corr=+2.485082e-03  log2|c|+L=+0.348
+check L= 9 off=2 seed=102  predicted corr=-2.681375e-03  log2|c|+L=+0.457
+check L= 9 off=2 seed=103  predicted corr=+1.841605e-03  log2|c|+L=-0.085
+check L= 9 off=2 seed=104  predicted corr=-2.108485e-03  log2|c|+L=+0.110
+check L= 9 off=2 seed=105  predicted corr=-1.430869e-03  log2|c|+L=-0.449
+check L= 9 off=2 seed=106  predicted corr=+1.890510e-03  log2|c|+L=-0.047
+check L= 9 off=2 seed=107  predicted corr=-2.615787e-03  log2|c|+L=+0.421
+check L= 9 off=2 seed=108  predicted corr=+1.978256e-03  log2|c|+L=+0.018
+check L= 9 off=2 seed=109  predicted corr=-1.534082e-03  log2|c|+L=-0.348
+check L= 9 off=2 seed=110  predicted corr=-1.609065e-03  log2|c|+L=-0.280
+check L= 9 off=2 seed=111  predicted corr=-1.048878e-03  log2|c|+L=-0.897
+check L= 9 off=2 seed=112  predicted corr=-1.312114e-03  log2|c|+L=-0.574
+check L= 9 off=2 seed=113  predicted corr=+1.617588e-03  log2|c|+L=-0.272
+check L= 9 off=2 seed=114  predicted corr=-1.491375e-03  log2|c|+L=-0.389
+check L= 9 off=2 seed=115  predicted corr=-2.682120e-03  log2|c|+L=+0.458
+check L= 9 off=2 seed=116  predicted corr=+2.022892e-03  log2|c|+L=+0.051
+check L= 9 off=2 seed=117  predicted corr=+1.236282e-03  log2|c|+L=-0.660
+check L= 9 off=2 seed=118  predicted corr=-1.452297e-03  log2|c|+L=-0.427
+check L= 9 off=2 seed=119  predicted corr=+1.575060e-03  log2|c|+L=-0.310
+check L= 9 off=2 seed=120  predicted corr=+1.784198e-03  log2|c|+L=-0.131
+check L= 9 off=2 seed=121  predicted corr=-1.480132e-03  log2|c|+L=-0.400
+check L= 9 off=2 seed=122  predicted corr=-2.422646e-03  log2|c|+L=+0.311
+check L= 9 off=2 seed=123  predicted corr=+1.252629e-03  log2|c|+L=-0.641
+check L= 9 off=2 seed=124  predicted corr=+1.100019e-03  log2|c|+L=-0.828
+check L= 9 off=2 seed=125  predicted corr=+2.190448e-03  log2|c|+L=+0.165
+check L= 9 off=2 seed=126  predicted corr=-2.387628e-03  log2|c|+L=+0.290
+check L= 9 off=2 seed=127  predicted corr=+1.831919e-03  log2|c|+L=-0.092
+check L= 9 off=2 seed=128  predicted corr=+2.164409e-03  log2|c|+L=+0.148
+check L= 9 off=2 seed=129  predicted corr=+3.017090e-03  log2|c|+L=+0.627
+check L= 9 off=2 seed=130  predicted corr=-2.457730e-03  log2|c|+L=+0.332
+check L= 9 off=2 seed=131  predicted corr=+1.821637e-03  log2|c|+L=-0.101
+check L= 9 off=2 seed=132  predicted corr=+1.724482e-03  log2|c|+L=-0.180
+check L=11 off=2 seed=301  predicted corr=-4.589559e-04  log2|c|+L=-0.089
+check L=11 off=2 seed=302  predicted corr=+9.914717e-04  log2|c|+L=+1.022
+check L=11 off=2 seed=303  predicted corr=+4.201067e-04  log2|c|+L=-0.217
+check L=11 off=2 seed=304  predicted corr=-4.422564e-04  log2|c|+L=-0.143
+check L=11 off=2 seed=305  predicted corr=+8.134298e-04  log2|c|+L=+0.736
+check L=11 off=2 seed=306  predicted corr=-4.073821e-04  log2|c|+L=-0.261
+check L=11 off=2 seed=307  predicted corr=-4.831435e-04  log2|c|+L=-0.015
+check L=11 off=2 seed=308  predicted corr=-3.564325e-04  log2|c|+L=-0.454
+check L=11 off=2 seed=309  predicted corr=-4.030822e-04  log2|c|+L=-0.277
+check L=11 off=2 seed=310  predicted corr=+2.769584e-04  log2|c|+L=-0.818
+check L=11 off=2 seed=311  predicted corr=-7.467830e-04  log2|c|+L=+0.613
+check L=11 off=2 seed=312  predicted corr=-4.261361e-04  log2|c|+L=-0.196
+check L=11 off=2 seed=313  predicted corr=+8.457386e-04  log2|c|+L=+0.792
+check L=11 off=2 seed=314  predicted corr=+5.544304e-04  log2|c|+L=+0.183
+check L=11 off=2 seed=315  predicted corr=-6.175823e-04  log2|c|+L=+0.339
+check L=11 off=2 seed=316  predicted corr=-5.871820e-04  log2|c|+L=+0.266
+check L=13 off=2 seed=301  predicted corr=-1.108530e-04  log2|c|+L=-0.139
+check L=13 off=2 seed=302  predicted corr=-2.444212e-04  log2|c|+L=+1.002
+check L=13 off=2 seed=303  predicted corr=-9.223598e-05  log2|c|+L=-0.404
+check L=13 off=2 seed=304  predicted corr=+5.751265e-05  log2|c|+L=-1.086
+check L=13 off=2 seed=305  predicted corr=+2.253903e-04  log2|c|+L=+0.885
+check L=13 off=2 seed=306  predicted corr=+1.036853e-04  log2|c|+L=-0.236
+check L=13 off=2 seed=307  predicted corr=+1.033282e-04  log2|c|+L=-0.240
+check L=13 off=2 seed=308  predicted corr=+5.905637e-05  log2|c|+L=-1.048
+check L=13 off=2 seed=309  predicted corr=+8.990391e-05  log2|c|+L=-0.441
+check L=13 off=2 seed=310  predicted corr=-8.638879e-05  log2|c|+L=-0.499
+check L=13 off=2 seed=311  predicted corr=+1.897192e-04  log2|c|+L=+0.636
+check L=13 off=2 seed=312  predicted corr=-1.073886e-04  log2|c|+L=-0.185
+check L=13 off=2 seed=313  predicted corr=-2.443466e-04  log2|c|+L=+1.001
+check L=13 off=2 seed=314  predicted corr=-1.945553e-04  log2|c|+L=+0.672
+check L=13 off=2 seed=315  predicted corr=-1.068457e-04  log2|c|+L=-0.192
+check L=13 off=2 seed=316  predicted corr=+1.412590e-04  log2|c|+L=+0.211

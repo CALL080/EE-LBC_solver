@@ -1,0 +1,11 @@
+[1] measured log2|c| of the correct guess against the fixed-key hull (rounds 3 .. r-1), per key and data size
+  L= 9 N=2^23: 32 keys, |log2(measured/predicted)| median 0.24, max 0.72
+  L= 9 N=2^24: 32 keys, |log2(measured/predicted)| median 0.20, max 0.80
+  L= 9 N=2^25: 32 keys, |log2(measured/predicted)| median 0.15, max 0.71
+  L=11 N=2^28: 16 keys, |log2(measured/predicted)| median 0.23, max 0.42
+  L=13 N=2^32: 16 keys, |log2(measured/predicted)| median 0.38, max 0.89
+
+[2] success for keys with predicted |c| >= 2^-L (N c^2 >= N c_0^2), against all keys
+  N c_0^2 = 2^5: all keys: rank 1 13/32, top 2^10 25/32;  keys with |c| >= c_0: rank 1 10/13, top 2^10 13/13
+  N c_0^2 = 2^6: all keys: rank 1 48/64, top 2^10 62/64;  keys with |c| >= c_0: rank 1 25/26, top 2^10 26/26
+  N c_0^2 = 2^7: all keys: rank 1 30/32, top 2^10 32/32;  keys with |c| >= c_0: rank 1 13/13, top 2^10 13/13

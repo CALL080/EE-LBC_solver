@@ -68,7 +68,7 @@ pf, pm = os.path.join(D, 'fixedhull_check.log'), os.path.join(D, 'corr_16keys.lo
 if os.path.exists(pf) and os.path.exists(pm):
     pred, meas = {}, {}
     for line in open(pf):
-        m = re.match(r'check L=\s*(\d+) seed=(\d+)\s+predicted corr=(\S+)', line)
+        m = re.match(r'check L=\s*(\d+)(?: off=0)? seed=(\d+)\s+predicted corr=(\S+)', line)   # off=0: rounds 1..L
         if m:
             pred[(int(m.group(1)), int(m.group(2)))] = float(m.group(3))
     for line in open(pm):
