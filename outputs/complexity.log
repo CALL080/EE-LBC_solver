@@ -12,10 +12,10 @@
   a = 20, P_S = 0.9: N = 2^61.26 known plaintexts; exhaustive part = 2^60 encryptions; counters 2^17; evaluation 2^36 table look-ups
 
 [3] Distinguisher on the full 31 rounds without key guess, L = 30, |c| = 2^-30
-  N = 2^60: false positive 0.617; false negative 0.242 (independent), 0.242 (distinct plaintexts)
-  N = 2^61: false positive 0.480; false negative 0.223 (independent), 0.213 (distinct plaintexts)
-  N = 2^62: false positive 0.317; false negative 0.157 (independent), 0.124 (distinct plaintexts)
-  N = 2^63: false positive 0.157; false negative 0.079 (independent), 0.023 (distinct plaintexts)
+  N = 2^60: distinct plaintexts FP 0.617, FN 0.242; independent plaintexts FP 0.628, FN 0.242
+  N = 2^61: distinct plaintexts FP 0.480, FN 0.213; independent plaintexts FP 0.505, FN 0.223
+  N = 2^62: distinct plaintexts FP 0.317, FN 0.124; independent plaintexts FP 0.371, FN 0.157
+  N = 2^63: distinct plaintexts FP 0.157, FN 0.023; independent plaintexts FP 0.248, FN 0.079
 
 [4] Rounds needed for the best single trail to fall below 2^-64 (B_R = 2R for R >= 8, last round keyless)
   smallest layer count with B_R > 64: 33; plus the keyless last round: 34 rounds (EE-LBC has 31)
@@ -29,5 +29,5 @@
 
 [6] Median complexities (Leander, EUROCRYPT 2011, Definition 1) from the fixed-key hull over 10000 keys
   key recovery, rounds 3..30: median log2|c| = -28.15; N = 2^6/c^2 = 2^62.30, N = 2^7/c^2 = 2^63.30 (success measured for keys with N c^2 >= 2^6: check_keyrec_hull.log [2])
-  distinguisher, rounds 1..30: median log2|c| = -30.17; N = 2^62, threshold |c_med|/2: false positive 0.374; false negative at most 0.183 (independent), 0.151 (distinct plaintexts) for half of the keys
-  distinguisher, rounds 1..30: median log2|c| = -30.17; N = 2^63, threshold |c_med|/2: false positive 0.209; false negative at most 0.104 (independent), 0.038 (distinct plaintexts) for half of the keys
+  distinguisher, rounds 1..30: median log2|c| = -30.17; N = 2^62, threshold |c_med|/2 (FN at most this for half of the keys): distinct plaintexts FP 0.374, FN 0.151; independent plaintexts FP 0.427, FN 0.183
+  distinguisher, rounds 1..30: median log2|c| = -30.17; N = 2^63, threshold |c_med|/2 (FN at most this for half of the keys): distinct plaintexts FP 0.209, FN 0.038; independent plaintexts FP 0.305, FN 0.104

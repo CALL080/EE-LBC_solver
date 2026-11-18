@@ -13,9 +13,10 @@ the PDF of the proposal is not included).
 2. For every round key, bit 21 (a fixed point of the permutation) gives a one-round linear approximation with one active
    S-box and correlation +-1/2. By branch-and-bound, the minimum linear weight is exactly `2R` for 8 <= R <= 34.
 3. No key is added after the last round, so the trail has to cover only 30 of the 31 rounds. For half of the keys,
-   the full key is recovered with 2^62.3 known plaintexts and 2^60 encryptions; under the same condition
-   (N c^2 >= 2^6) on 12 to 16 rounds, the correct 20-bit guess ranked first in 25 of 26 runs and among the best 2^10
-   in all 26 (then 2^70 encryptions). The proposal estimates 2^124 plaintexts.
+   we estimate that the full key is recovered with 2^62.3 known plaintexts and 2^60 encryptions: under the same
+   condition (N c^2 >= 2^6) on 12 to 16 rounds, the correct 20-bit guess ranked first (with no tie) in 25 of 26 runs
+   and among the best 2^10 in all 26 (then 2^70 encryptions). The attack was not run on 31 rounds, which would need
+   2^62.3 plaintexts. The proposal estimates 2^124 plaintexts.
 4. The claims of the proposal (maximum differential probability 2^-2, at least 10 active S-boxes over 5 rounds and
    62 over 25 rounds) do not hold: the correct values are 2^-1, 5, and 25.
 
@@ -68,13 +69,14 @@ measurements are the same on every run.
 | Sect. 3.1 | Linear hull over masks with at most two active S-boxes: 2^-59.29 for 30 rounds (EE-LBC), 2^-81.64 (PRESENT) | `./run_all.sh` | `hull_eelbc_lin_21.log`, `hull_present_lin_21.log`, line `R=30` |
 | Fig. 2 | Plot data | `python3 make_figs.py` | `figs/fig_weights.tex` |
 | Sect. 3.2, Table 3 | Measured correlation of the bit-21 trail (within 0.25 bits of 2^-L in RMS) and probability of the bit-0 characteristic (within 0.1 bits of 2^-3L) for 2 to 13 trail rounds | `./run_all.sh --full` | `experiments.log`, `summarize_experiments.log` `[1]` `[2]`, `figs/tab_exp_rows.tex` |
-| Sect. 4.1, Table 4 | Distinguisher with 2^63 known plaintexts and the threshold `|c|/2`: false positive 0.21 (two-sided, 0.209); false negative at most 0.11 for half of the keys (0.104), or 0.04 (0.038) if the plaintexts are distinct | `python3 complexity.py` | `complexity.log`, `[6]` (`[3]` for `|c|` = 2^-30) |
+| Sect. 4.1, Table 4 | Distinguisher with 2^63 distinct known plaintexts and the threshold `|c_med|/2`, `|c_med|` = 2^-30.17: false positive 0.21 (two-sided, 0.209); false negative at most 0.04 for half of the keys (0.038). With independent plaintexts (drawn with replacement) the pair would be 0.305 and 0.104 | `python3 complexity.py` | `complexity.log`, `[6]` (`[3]` for `|c|` = 2^-30) |
 | Sect. 4.2 | Selcuk's model: 2^61.26 known plaintexts for the 20-bit guess with success 0.9 (not used for Table 4) | `python3 complexity.py` | `complexity.log`, `[2]` |
 | Sect. 4.2 | A wrong guess has correlation `rho c`; over all 2^20 - 1 wrong guesses, `|rho|` reaches 0.75 for 18 and is never 1 (same for six random correct guesses) | `./run_all.sh` | `wrongkeys.log` |
-| Sect. 4.3, Table 5 | Rank of the correct 20-bit guess on 12, 14 and 16 rounds: with `N = 2^6/c^2`, among the best 2^10 in 62 of 64 runs and first in 48; with `2^7/c^2` on 12 rounds, first in 30 of 32 | `./run_all.sh --full` | `keyrec_r12_32seeds.log`, `keyrec_longer.log`, `summarize_experiments.log` `[3]`, `figs/tab_keyrec_rows.tex` |
+| Sect. 4.3, Table 5 | Rank (1 + number of guesses with a larger score) of the correct 20-bit guess on 12, 14 and 16 rounds: with `N = 2^6/c_0^2`, among the best 2^10 in 62 of 64 runs and first in 48; with `2^7/c_0^2` on 12 rounds, first in 30 of 32; median rank 4.5 in the first row (usual median) | `./run_all.sh --full` | `keyrec_r12_32seeds.log`, `keyrec_longer.log`, `summarize_experiments.log` `[3]`, `figs/tab_keyrec_rows.tex` |
 | Sect. 4.3 | The fixed-key hull has the sign of the measured correlation for all 48 keys of `corr_16keys.log` (median deviation 0.18 to 0.31 bits) and deviates from the correct-guess correlations of the 64 key-recovery runs by 0.15 to 0.38 bits in the median | `./run_all.sh` (measurements: `--full`) | `fixedhull_check.log`, `summarize_experiments.log` `[5]`; `fixedhull_check_keyrec.log`, `check_keyrec_hull.log` `[1]` |
 | Sect. 4.3 | Over 10000 keys and the round keys of rounds 3 to 30: median of `|c|` is 2^-28.15, and 44.5%, 61.5%, 74.0% of the keys have `|c|` >= 2^-28, 2^-28.5, 2^-29; over rounds 1 to 30, the median is 2^-30.17 | `./run_all.sh` | `fixedhull_stats_window.log` (`fixedhull_stats.log`: 2000 keys for several `L`, supplementary) |
-| Sect. 4.3, Table 4 | In the runs of Table 5 with `N = 2^6/c_0^2`, `c_0 = 2^-L`, the 26 keys whose predicted `|c|` is at least `c_0` had the correct guess first in 25 runs and among the best 2^10 in all 26 | `./run_all.sh` | `check_keyrec_hull.log` `[2]` |
+| Sect. 4.3, Table 4 | In the runs of Table 5 with `N = 2^6/c_0^2`, `c_0 = 2^-L`, the 26 runs (20 keys; 14 and 16 rounds share seeds) whose predicted `|c|` is at least `c_0` had the correct guess first in 25 and among the best 2^10 in all 26 | `./run_all.sh` | `check_keyrec_hull.log` `[2]` |
+| Sect. 4.3 | Whenever the correct guess ranked first, no wrong guess had the same score (ties occur only in runs where it did not rank first) | `./run_all.sh` | `check_keyrec_hull.log` `[3]` (fields `ties=` and `best wrong` of the `keyrec` lines) |
 | Table 4 | For half of the keys: `N = 2^6/c^2` = 2^62.30 with the median `|c|` = 2^-28.15 (so that `N c^2 >= 2^6`); time 2^60 (best guess) or 2^70 (best 2^10 guesses) for the remaining 60 key bits | `python3 complexity.py` | `complexity.log`, `[6]` |
 | Sect. 6 | With the PRESENT S-box, a final key, and the PRESENT readings of the open points, the code reproduces the four PRESENT-80 test vectors | `python3 check_spec.py` | `[9]` |
 

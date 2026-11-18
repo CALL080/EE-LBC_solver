@@ -6,6 +6,7 @@ Writes outputs/figs/fig_weights.tex (Fig. 2) and outputs/figs/tab_exp_rows.tex (
 import math
 import os
 import re
+import statistics
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -96,7 +97,7 @@ for (r, L, lg) in sorted(kr):
     ranks = kr[(r, L, lg)]
     n = len(ranks)
     krows.append(f'{r} & {L} & $2^{{{lg - 2 * L}}}$ & $2^{{{lg}}}$ & {n} & {sum(x == 1 for x in ranks)} & '
-                 f'{sum(x <= 1024 for x in ranks)} & {sorted(ranks)[(n - 1) // 2]} \\\\')
+                 f'{sum(x <= 1024 for x in ranks)} & {statistics.median(ranks):g} \\\\')   # usual median: mean of the two middle values
 krows.append('\\bottomrule')
 if kr:
     open(os.path.join(FIGS, 'tab_keyrec_rows.tex'), 'w', encoding='utf-8').write('\n'.join(krows) + '\n')

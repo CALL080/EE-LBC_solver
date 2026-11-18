@@ -123,10 +123,19 @@ int main(int argc, char **argv) {
             }
         }
         int truek = (true_k1 << 4) | true_k2;
-        long long rank = 1;
-        for (int g = 0; g < (1 << 20); g++) if (score[g] > score[truek]) rank++;
-        printf("keyrec r=%2d trail_layers=%2d N=2^%d seed=%llu  |corr(true key)|=2^%.3f (expected 2^%d)  rank of true 20-bit key = %lld / 2^20\n",
-               r, r - 3, lg, (unsigned long long)seed, log2(score[truek]), -(r - 3), rank);
+        /* rank = 1 + number of guesses with a strictly larger score; ties (equal score) are counted separately,
+         * and best_wrong is the largest score of a wrong guess, so that rank 1 with ties = 0 is a strict first place */
+        long long rank = 1, ties = 0;
+        double best_wrong = 0;
+        for (int g = 0; g < (1 << 20); g++) {
+            if (g == truek) continue;
+            if (score[g] > score[truek]) rank++;
+            else if (score[g] == score[truek]) ties++;
+            if (score[g] > best_wrong) best_wrong = score[g];
+        }
+        printf("keyrec r=%2d trail_layers=%2d N=2^%d seed=%llu  |corr(true key)|=2^%.3f (expected 2^%d)  rank of true 20-bit key = %lld / 2^20"
+               "  ties=%lld  best wrong 2^%.3f\n",
+               r, r - 3, lg, (unsigned long long)seed, log2(score[truek]), -(r - 3), rank, ties, log2(best_wrong));
         return 0;
     }
     if (argc < 5) { fprintf(stderr, "usage: see header\n"); return 1; }

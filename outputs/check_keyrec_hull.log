@@ -7,5 +7,13 @@
 
 [2] success for keys with predicted |c| >= 2^-L (N c^2 >= N c_0^2), against all keys
   N c_0^2 = 2^5: all keys: rank 1 13/32, top 2^10 25/32;  keys with |c| >= c_0: rank 1 10/13, top 2^10 13/13
+    distinct seeds: all 32, with |c| >= c_0 13 (14 and 16 rounds use the same seeds)
   N c_0^2 = 2^6: all keys: rank 1 48/64, top 2^10 62/64;  keys with |c| >= c_0: rank 1 25/26, top 2^10 26/26
+    distinct seeds: all 48, with |c| >= c_0 20 (14 and 16 rounds use the same seeds)
   N c_0^2 = 2^7: all keys: rank 1 30/32, top 2^10 32/32;  keys with |c| >= c_0: rank 1 13/13, top 2^10 13/13
+    distinct seeds: all 32, with |c| >= c_0 13 (14 and 16 rounds use the same seeds)
+
+[3] ties: rank = 1 + number of guesses with a strictly larger score; ties = wrong guesses with the same score
+  N c_0^2 = 2^5: 13 runs with rank 1, ties among them: 0; log2 margin over the best wrong guess min 0.0050 median 0.160; runs with ties (r, seed, rank, ties): [(12, 105, 1343, 2), (12, 110, 1158, 5), (12, 111, 2549, 3), (12, 112, 3639, 7), (12, 117, 215, 1), (12, 120, 231, 2), (12, 121, 22517, 38), (12, 123, 9557, 31), (12, 131, 1712, 4)]
+  N c_0^2 = 2^6: 48 runs with rank 1, ties among them: 0; log2 margin over the best wrong guess min 0.0010 median 0.182; runs with ties (r, seed, rank, ties): [(12, 121, 4048, 9), (16, 310, 8463, 1)]
+  N c_0^2 = 2^7: 30 runs with rank 1, ties among them: 0; log2 margin over the best wrong guess min 0.0550 median 0.211; runs with ties (r, seed, rank, ties): none

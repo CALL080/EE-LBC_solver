@@ -25,7 +25,9 @@ for fn in ('keyrec_r12_32seeds.log', 'keyrec_longer.log'):
                       r'rank of true 20-bit key = (\d+)', line)
         if m:
             r, L, lg, seed = map(int, m.groups()[:4])
-            runs.append(dict(r=r, L=L, lg=lg, seed=seed, meas=float(m.group(5)), rank=int(m.group(6))))
+            t = re.search(r'ties=(\d+)  best wrong 2\^(\S+)', line)        # printed by experiments.c since 2026-11-18
+            runs.append(dict(r=r, L=L, lg=lg, seed=seed, meas=float(m.group(5)), rank=int(m.group(6)),
+                             ties=int(t.group(1)) if t else None, best=float(t.group(2)) if t else None))
 
 print('[1] measured log2|c| of the correct guess against the fixed-key hull (rounds 3 .. r-1), per key and data size')
 by = defaultdict(list)
@@ -50,3 +52,19 @@ for nc in sorted(grp):
     g = grp[nc]
     print(f'  N c_0^2 = 2^{nc}: all keys: rank 1 {g[1]}/{g[0]}, top 2^10 {g[2]}/{g[0]};'
           f'  keys with |c| >= c_0: rank 1 {g[4]}/{g[3]}, top 2^10 {g[5]}/{g[3]}')
+    sel = [x for x in runs if x['lg'] - 2 * x['L'] == nc and pred.get((x['L'], x['seed'])) and math.log2(pred[(x['L'], x['seed'])]) >= -x['L']]
+    print(f'    distinct seeds: all {len({(x["seed"]) for x in runs if x["lg"] - 2 * x["L"] == nc})}, with |c| >= c_0 {len({x["seed"] for x in sel})}'
+          ' (14 and 16 rounds use the same seeds)')
+
+print('\n[3] ties: rank = 1 + number of guesses with a strictly larger score; ties = wrong guesses with the same score')
+for nc in sorted(grp):
+    rs = [x for x in runs if x['lg'] - 2 * x['L'] == nc]
+    if any(x['ties'] is None for x in rs):
+        print(f'  N c_0^2 = 2^{nc}: log without tie counts')
+        continue
+    first = [x for x in rs if x['rank'] == 1]
+    tied = [(x['r'], x['seed'], x['rank'], x['ties']) for x in rs if x['ties']]
+    margin = sorted(x['meas'] - x['best'] for x in first)
+    print(f'  N c_0^2 = 2^{nc}: {len(first)} runs with rank 1, ties among them: {sum(x["ties"] for x in first)};'
+          f' log2 margin over the best wrong guess min {margin[0]:.4f} median {margin[len(margin) // 2]:.3f};'
+          f' runs with ties (r, seed, rank, ties): {tied if tied else "none"}')

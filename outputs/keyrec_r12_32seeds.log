@@ -1,96 +1,96 @@
-keyrec r=12 trail_layers= 9 N=2^23 seed=101  |corr(true key)|=2^-8.682 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=102  |corr(true key)|=2^-8.668 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=103  |corr(true key)|=2^-9.246 (expected 2^-9)  rank of true 20-bit key = 25 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=104  |corr(true key)|=2^-9.110 (expected 2^-9)  rank of true 20-bit key = 9 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=105  |corr(true key)|=2^-9.711 (expected 2^-9)  rank of true 20-bit key = 1343 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=106  |corr(true key)|=2^-9.074 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=107  |corr(true key)|=2^-8.502 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=108  |corr(true key)|=2^-8.766 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=109  |corr(true key)|=2^-9.163 (expected 2^-9)  rank of true 20-bit key = 9 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=110  |corr(true key)|=2^-9.722 (expected 2^-9)  rank of true 20-bit key = 1158 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=111  |corr(true key)|=2^-9.808 (expected 2^-9)  rank of true 20-bit key = 2549 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=112  |corr(true key)|=2^-9.717 (expected 2^-9)  rank of true 20-bit key = 3639 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=113  |corr(true key)|=2^-8.716 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=114  |corr(true key)|=2^-9.030 (expected 2^-9)  rank of true 20-bit key = 38 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=115  |corr(true key)|=2^-8.136 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=116  |corr(true key)|=2^-8.938 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=117  |corr(true key)|=2^-9.530 (expected 2^-9)  rank of true 20-bit key = 215 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=118  |corr(true key)|=2^-9.275 (expected 2^-9)  rank of true 20-bit key = 6 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=119  |corr(true key)|=2^-8.828 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=120  |corr(true key)|=2^-9.483 (expected 2^-9)  rank of true 20-bit key = 231 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=121  |corr(true key)|=2^-10.121 (expected 2^-9)  rank of true 20-bit key = 22517 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=122  |corr(true key)|=2^-8.537 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=123  |corr(true key)|=2^-10.208 (expected 2^-9)  rank of true 20-bit key = 9557 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=124  |corr(true key)|=2^-9.275 (expected 2^-9)  rank of true 20-bit key = 8 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=125  |corr(true key)|=2^-9.092 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=126  |corr(true key)|=2^-8.469 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=127  |corr(true key)|=2^-8.664 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=128  |corr(true key)|=2^-9.165 (expected 2^-9)  rank of true 20-bit key = 3 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=129  |corr(true key)|=2^-8.274 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=130  |corr(true key)|=2^-9.058 (expected 2^-9)  rank of true 20-bit key = 7 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=131  |corr(true key)|=2^-9.739 (expected 2^-9)  rank of true 20-bit key = 1712 / 2^20
-keyrec r=12 trail_layers= 9 N=2^23 seed=132  |corr(true key)|=2^-9.110 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=101  |corr(true key)|=2^-8.453 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=102  |corr(true key)|=2^-8.740 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=103  |corr(true key)|=2^-9.273 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=104  |corr(true key)|=2^-9.084 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=105  |corr(true key)|=2^-9.483 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=106  |corr(true key)|=2^-9.068 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=107  |corr(true key)|=2^-8.518 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=108  |corr(true key)|=2^-8.770 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=109  |corr(true key)|=2^-9.290 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=110  |corr(true key)|=2^-9.603 (expected 2^-9)  rank of true 20-bit key = 3 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=111  |corr(true key)|=2^-9.598 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=112  |corr(true key)|=2^-9.135 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=113  |corr(true key)|=2^-8.708 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=114  |corr(true key)|=2^-9.420 (expected 2^-9)  rank of true 20-bit key = 74 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=115  |corr(true key)|=2^-8.160 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=116  |corr(true key)|=2^-9.019 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=117  |corr(true key)|=2^-9.342 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=118  |corr(true key)|=2^-9.045 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=119  |corr(true key)|=2^-8.681 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=120  |corr(true key)|=2^-9.146 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=121  |corr(true key)|=2^-10.202 (expected 2^-9)  rank of true 20-bit key = 4048 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=122  |corr(true key)|=2^-8.582 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=123  |corr(true key)|=2^-9.740 (expected 2^-9)  rank of true 20-bit key = 12 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=124  |corr(true key)|=2^-9.170 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=125  |corr(true key)|=2^-9.012 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=126  |corr(true key)|=2^-8.483 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=127  |corr(true key)|=2^-9.019 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=128  |corr(true key)|=2^-9.161 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=129  |corr(true key)|=2^-8.202 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=130  |corr(true key)|=2^-8.844 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=131  |corr(true key)|=2^-9.492 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20
-keyrec r=12 trail_layers= 9 N=2^24 seed=132  |corr(true key)|=2^-8.947 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=101  |corr(true key)|=2^-8.576 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=102  |corr(true key)|=2^-8.743 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=103  |corr(true key)|=2^-9.185 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=104  |corr(true key)|=2^-8.949 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=105  |corr(true key)|=2^-9.276 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=106  |corr(true key)|=2^-9.353 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=107  |corr(true key)|=2^-8.556 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=108  |corr(true key)|=2^-8.915 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=109  |corr(true key)|=2^-9.243 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=110  |corr(true key)|=2^-9.654 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=111  |corr(true key)|=2^-9.602 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=112  |corr(true key)|=2^-9.450 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=113  |corr(true key)|=2^-8.557 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=114  |corr(true key)|=2^-9.214 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=115  |corr(true key)|=2^-8.307 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=116  |corr(true key)|=2^-9.061 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=117  |corr(true key)|=2^-9.322 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=118  |corr(true key)|=2^-9.167 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=119  |corr(true key)|=2^-8.922 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=120  |corr(true key)|=2^-9.016 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=121  |corr(true key)|=2^-9.788 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=122  |corr(true key)|=2^-8.693 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=123  |corr(true key)|=2^-9.610 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=124  |corr(true key)|=2^-9.273 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=125  |corr(true key)|=2^-8.967 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=126  |corr(true key)|=2^-8.492 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=127  |corr(true key)|=2^-9.220 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=128  |corr(true key)|=2^-9.003 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=129  |corr(true key)|=2^-8.272 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=130  |corr(true key)|=2^-8.755 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=131  |corr(true key)|=2^-9.215 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
-keyrec r=12 trail_layers= 9 N=2^25 seed=132  |corr(true key)|=2^-8.822 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20
+keyrec r=12 trail_layers= 9 N=2^23 seed=101  |corr(true key)|=2^-8.682 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.842
+keyrec r=12 trail_layers= 9 N=2^23 seed=102  |corr(true key)|=2^-8.668 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.842
+keyrec r=12 trail_layers= 9 N=2^23 seed=103  |corr(true key)|=2^-9.246 (expected 2^-9)  rank of true 20-bit key = 25 / 2^20  ties=0  best wrong 2^-9.026
+keyrec r=12 trail_layers= 9 N=2^23 seed=104  |corr(true key)|=2^-9.110 (expected 2^-9)  rank of true 20-bit key = 9 / 2^20  ties=0  best wrong 2^-8.939
+keyrec r=12 trail_layers= 9 N=2^23 seed=105  |corr(true key)|=2^-9.711 (expected 2^-9)  rank of true 20-bit key = 1343 / 2^20  ties=2  best wrong 2^-9.096
+keyrec r=12 trail_layers= 9 N=2^23 seed=106  |corr(true key)|=2^-9.074 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20  ties=0  best wrong 2^-9.062
+keyrec r=12 trail_layers= 9 N=2^23 seed=107  |corr(true key)|=2^-8.502 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.586
+keyrec r=12 trail_layers= 9 N=2^23 seed=108  |corr(true key)|=2^-8.766 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.941
+keyrec r=12 trail_layers= 9 N=2^23 seed=109  |corr(true key)|=2^-9.163 (expected 2^-9)  rank of true 20-bit key = 9 / 2^20  ties=0  best wrong 2^-9.063
+keyrec r=12 trail_layers= 9 N=2^23 seed=110  |corr(true key)|=2^-9.722 (expected 2^-9)  rank of true 20-bit key = 1158 / 2^20  ties=5  best wrong 2^-9.161
+keyrec r=12 trail_layers= 9 N=2^23 seed=111  |corr(true key)|=2^-9.808 (expected 2^-9)  rank of true 20-bit key = 2549 / 2^20  ties=3  best wrong 2^-9.090
+keyrec r=12 trail_layers= 9 N=2^23 seed=112  |corr(true key)|=2^-9.717 (expected 2^-9)  rank of true 20-bit key = 3639 / 2^20  ties=7  best wrong 2^-8.915
+keyrec r=12 trail_layers= 9 N=2^23 seed=113  |corr(true key)|=2^-8.716 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.948
+keyrec r=12 trail_layers= 9 N=2^23 seed=114  |corr(true key)|=2^-9.030 (expected 2^-9)  rank of true 20-bit key = 38 / 2^20  ties=0  best wrong 2^-8.506
+keyrec r=12 trail_layers= 9 N=2^23 seed=115  |corr(true key)|=2^-8.136 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.303
+keyrec r=12 trail_layers= 9 N=2^23 seed=116  |corr(true key)|=2^-8.938 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.943
+keyrec r=12 trail_layers= 9 N=2^23 seed=117  |corr(true key)|=2^-9.530 (expected 2^-9)  rank of true 20-bit key = 215 / 2^20  ties=1  best wrong 2^-9.243
+keyrec r=12 trail_layers= 9 N=2^23 seed=118  |corr(true key)|=2^-9.275 (expected 2^-9)  rank of true 20-bit key = 6 / 2^20  ties=0  best wrong 2^-9.184
+keyrec r=12 trail_layers= 9 N=2^23 seed=119  |corr(true key)|=2^-8.828 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.834
+keyrec r=12 trail_layers= 9 N=2^23 seed=120  |corr(true key)|=2^-9.483 (expected 2^-9)  rank of true 20-bit key = 231 / 2^20  ties=2  best wrong 2^-9.108
+keyrec r=12 trail_layers= 9 N=2^23 seed=121  |corr(true key)|=2^-10.121 (expected 2^-9)  rank of true 20-bit key = 22517 / 2^20  ties=38  best wrong 2^-8.837
+keyrec r=12 trail_layers= 9 N=2^23 seed=122  |corr(true key)|=2^-8.537 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.650
+keyrec r=12 trail_layers= 9 N=2^23 seed=123  |corr(true key)|=2^-10.208 (expected 2^-9)  rank of true 20-bit key = 9557 / 2^20  ties=31  best wrong 2^-9.283
+keyrec r=12 trail_layers= 9 N=2^23 seed=124  |corr(true key)|=2^-9.275 (expected 2^-9)  rank of true 20-bit key = 8 / 2^20  ties=0  best wrong 2^-9.197
+keyrec r=12 trail_layers= 9 N=2^23 seed=125  |corr(true key)|=2^-9.092 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.149
+keyrec r=12 trail_layers= 9 N=2^23 seed=126  |corr(true key)|=2^-8.469 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.528
+keyrec r=12 trail_layers= 9 N=2^23 seed=127  |corr(true key)|=2^-8.664 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.009
+keyrec r=12 trail_layers= 9 N=2^23 seed=128  |corr(true key)|=2^-9.165 (expected 2^-9)  rank of true 20-bit key = 3 / 2^20  ties=0  best wrong 2^-9.094
+keyrec r=12 trail_layers= 9 N=2^23 seed=129  |corr(true key)|=2^-8.274 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.529
+keyrec r=12 trail_layers= 9 N=2^23 seed=130  |corr(true key)|=2^-9.058 (expected 2^-9)  rank of true 20-bit key = 7 / 2^20  ties=0  best wrong 2^-8.932
+keyrec r=12 trail_layers= 9 N=2^23 seed=131  |corr(true key)|=2^-9.739 (expected 2^-9)  rank of true 20-bit key = 1712 / 2^20  ties=4  best wrong 2^-9.110
+keyrec r=12 trail_layers= 9 N=2^23 seed=132  |corr(true key)|=2^-9.110 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20  ties=0  best wrong 2^-9.085
+keyrec r=12 trail_layers= 9 N=2^24 seed=101  |corr(true key)|=2^-8.453 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.719
+keyrec r=12 trail_layers= 9 N=2^24 seed=102  |corr(true key)|=2^-8.740 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.023
+keyrec r=12 trail_layers= 9 N=2^24 seed=103  |corr(true key)|=2^-9.273 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20  ties=0  best wrong 2^-9.271
+keyrec r=12 trail_layers= 9 N=2^24 seed=104  |corr(true key)|=2^-9.084 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.172
+keyrec r=12 trail_layers= 9 N=2^24 seed=105  |corr(true key)|=2^-9.483 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20  ties=0  best wrong 2^-9.470
+keyrec r=12 trail_layers= 9 N=2^24 seed=106  |corr(true key)|=2^-9.068 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.090
+keyrec r=12 trail_layers= 9 N=2^24 seed=107  |corr(true key)|=2^-8.518 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.631
+keyrec r=12 trail_layers= 9 N=2^24 seed=108  |corr(true key)|=2^-8.770 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.946
+keyrec r=12 trail_layers= 9 N=2^24 seed=109  |corr(true key)|=2^-9.290 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.532
+keyrec r=12 trail_layers= 9 N=2^24 seed=110  |corr(true key)|=2^-9.603 (expected 2^-9)  rank of true 20-bit key = 3 / 2^20  ties=0  best wrong 2^-9.562
+keyrec r=12 trail_layers= 9 N=2^24 seed=111  |corr(true key)|=2^-9.598 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.639
+keyrec r=12 trail_layers= 9 N=2^24 seed=112  |corr(true key)|=2^-9.135 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.269
+keyrec r=12 trail_layers= 9 N=2^24 seed=113  |corr(true key)|=2^-8.708 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.984
+keyrec r=12 trail_layers= 9 N=2^24 seed=114  |corr(true key)|=2^-9.420 (expected 2^-9)  rank of true 20-bit key = 74 / 2^20  ties=0  best wrong 2^-8.792
+keyrec r=12 trail_layers= 9 N=2^24 seed=115  |corr(true key)|=2^-8.160 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.361
+keyrec r=12 trail_layers= 9 N=2^24 seed=116  |corr(true key)|=2^-9.019 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.169
+keyrec r=12 trail_layers= 9 N=2^24 seed=117  |corr(true key)|=2^-9.342 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.478
+keyrec r=12 trail_layers= 9 N=2^24 seed=118  |corr(true key)|=2^-9.045 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.171
+keyrec r=12 trail_layers= 9 N=2^24 seed=119  |corr(true key)|=2^-8.681 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.881
+keyrec r=12 trail_layers= 9 N=2^24 seed=120  |corr(true key)|=2^-9.146 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.221
+keyrec r=12 trail_layers= 9 N=2^24 seed=121  |corr(true key)|=2^-10.202 (expected 2^-9)  rank of true 20-bit key = 4048 / 2^20  ties=9  best wrong 2^-9.478
+keyrec r=12 trail_layers= 9 N=2^24 seed=122  |corr(true key)|=2^-8.582 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.687
+keyrec r=12 trail_layers= 9 N=2^24 seed=123  |corr(true key)|=2^-9.740 (expected 2^-9)  rank of true 20-bit key = 12 / 2^20  ties=0  best wrong 2^-9.605
+keyrec r=12 trail_layers= 9 N=2^24 seed=124  |corr(true key)|=2^-9.170 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.263
+keyrec r=12 trail_layers= 9 N=2^24 seed=125  |corr(true key)|=2^-9.012 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.203
+keyrec r=12 trail_layers= 9 N=2^24 seed=126  |corr(true key)|=2^-8.483 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.665
+keyrec r=12 trail_layers= 9 N=2^24 seed=127  |corr(true key)|=2^-9.019 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.386
+keyrec r=12 trail_layers= 9 N=2^24 seed=128  |corr(true key)|=2^-9.161 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20  ties=0  best wrong 2^-9.108
+keyrec r=12 trail_layers= 9 N=2^24 seed=129  |corr(true key)|=2^-8.202 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.438
+keyrec r=12 trail_layers= 9 N=2^24 seed=130  |corr(true key)|=2^-8.844 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.031
+keyrec r=12 trail_layers= 9 N=2^24 seed=131  |corr(true key)|=2^-9.492 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20  ties=0  best wrong 2^-9.440
+keyrec r=12 trail_layers= 9 N=2^24 seed=132  |corr(true key)|=2^-8.947 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.242
+keyrec r=12 trail_layers= 9 N=2^25 seed=101  |corr(true key)|=2^-8.576 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.938
+keyrec r=12 trail_layers= 9 N=2^25 seed=102  |corr(true key)|=2^-8.743 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.034
+keyrec r=12 trail_layers= 9 N=2^25 seed=103  |corr(true key)|=2^-9.185 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.410
+keyrec r=12 trail_layers= 9 N=2^25 seed=104  |corr(true key)|=2^-8.949 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.160
+keyrec r=12 trail_layers= 9 N=2^25 seed=105  |corr(true key)|=2^-9.276 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.421
+keyrec r=12 trail_layers= 9 N=2^25 seed=106  |corr(true key)|=2^-9.353 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.421
+keyrec r=12 trail_layers= 9 N=2^25 seed=107  |corr(true key)|=2^-8.556 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.845
+keyrec r=12 trail_layers= 9 N=2^25 seed=108  |corr(true key)|=2^-8.915 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.112
+keyrec r=12 trail_layers= 9 N=2^25 seed=109  |corr(true key)|=2^-9.243 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.353
+keyrec r=12 trail_layers= 9 N=2^25 seed=110  |corr(true key)|=2^-9.654 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20  ties=0  best wrong 2^-9.652
+keyrec r=12 trail_layers= 9 N=2^25 seed=111  |corr(true key)|=2^-9.602 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.690
+keyrec r=12 trail_layers= 9 N=2^25 seed=112  |corr(true key)|=2^-9.450 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.662
+keyrec r=12 trail_layers= 9 N=2^25 seed=113  |corr(true key)|=2^-8.557 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.925
+keyrec r=12 trail_layers= 9 N=2^25 seed=114  |corr(true key)|=2^-9.214 (expected 2^-9)  rank of true 20-bit key = 2 / 2^20  ties=0  best wrong 2^-9.200
+keyrec r=12 trail_layers= 9 N=2^25 seed=115  |corr(true key)|=2^-8.307 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.587
+keyrec r=12 trail_layers= 9 N=2^25 seed=116  |corr(true key)|=2^-9.061 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.285
+keyrec r=12 trail_layers= 9 N=2^25 seed=117  |corr(true key)|=2^-9.322 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.425
+keyrec r=12 trail_layers= 9 N=2^25 seed=118  |corr(true key)|=2^-9.167 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.222
+keyrec r=12 trail_layers= 9 N=2^25 seed=119  |corr(true key)|=2^-8.922 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.234
+keyrec r=12 trail_layers= 9 N=2^25 seed=120  |corr(true key)|=2^-9.016 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.207
+keyrec r=12 trail_layers= 9 N=2^25 seed=121  |corr(true key)|=2^-9.788 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.909
+keyrec r=12 trail_layers= 9 N=2^25 seed=122  |corr(true key)|=2^-8.693 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.884
+keyrec r=12 trail_layers= 9 N=2^25 seed=123  |corr(true key)|=2^-9.610 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.719
+keyrec r=12 trail_layers= 9 N=2^25 seed=124  |corr(true key)|=2^-9.273 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.515
+keyrec r=12 trail_layers= 9 N=2^25 seed=125  |corr(true key)|=2^-8.967 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.246
+keyrec r=12 trail_layers= 9 N=2^25 seed=126  |corr(true key)|=2^-8.492 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.678
+keyrec r=12 trail_layers= 9 N=2^25 seed=127  |corr(true key)|=2^-9.220 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.409
+keyrec r=12 trail_layers= 9 N=2^25 seed=128  |corr(true key)|=2^-9.003 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.143
+keyrec r=12 trail_layers= 9 N=2^25 seed=129  |corr(true key)|=2^-8.272 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.588
+keyrec r=12 trail_layers= 9 N=2^25 seed=130  |corr(true key)|=2^-8.755 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-8.956
+keyrec r=12 trail_layers= 9 N=2^25 seed=131  |corr(true key)|=2^-9.215 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.526
+keyrec r=12 trail_layers= 9 N=2^25 seed=132  |corr(true key)|=2^-8.822 (expected 2^-9)  rank of true 20-bit key = 1 / 2^20  ties=0  best wrong 2^-9.166
