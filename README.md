@@ -49,8 +49,10 @@ measurements are the same on every run.
   The results of Sects. 3 and 5 depend only on the S-box and `P`, and the attacks hold for every reading (Sect. 4.4).
 - The weight of a trail is `-log2` of the product of the DDT probabilities (differential) or of the squared
   correlations (linear) of its active S-boxes. An `R`-round trail passes through `R` S-layers.
-- In the experiments, `r` rounds of the cipher leave `L = r - 1` trail rounds (the last round is removed without a key),
-  and the key recovery on `r` rounds leaves `L = r - 3` (two rounds of guessed key and the keyless last round).
+- In the experiments, `r` rounds of the cipher leave `R = r - 1` trail rounds (the last round is removed without a key),
+  and the key recovery on `r` rounds leaves `R = r - 3` (two rounds of guessed key and the keyless last round).
+  The paper writes `R` for the number of trail rounds everywhere; the logs print it as `L` or `trail_layers`, and the
+  tables below keep the log notation `L`.
 
 ## Claims of the paper and how to check them
 
