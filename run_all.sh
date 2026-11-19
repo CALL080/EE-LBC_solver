@@ -1,7 +1,7 @@
 #!/bin/bash
 # Regenerate outputs/ (run from this directory).  Needs Python 3.8+ (standard library only) and gcc with OpenMP.
 #   ./run_all.sh          checks, exact searches, hull sums and figure data (a few minutes)
-#   ./run_all.sh --full   also the reduced-round experiments of Table 3 (about one hour on 20 cores)
+#   ./run_all.sh --full   also the reduced-round experiments of Tables 3 and 5 (about two hours on 20 threads)
 set -euo pipefail
 cd "$(dirname "$0")"
 PY=${PYTHON:-python3}
@@ -61,6 +61,7 @@ if [ "${1:-}" = "--full" ]; then
 fi
 
 $PY complexity.py > outputs/complexity.log
+$PY extra_round.py > outputs/extra_round.log
 
 $PY summarize_experiments.py > outputs/summarize_experiments.log
 $PY check_keyrec_hull.py > outputs/check_keyrec_hull.log

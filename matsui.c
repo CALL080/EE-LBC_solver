@@ -1,5 +1,5 @@
 /* Exact minimum weights of differential and linear trails for 64-bit SPNs with the PRESENT bit permutation
- * (EE-LBC and PRESENT), by Matsui's branch-and-bound algorithm (Matsui, FSE 1994).
+ * (EE-LBC and PRESENT), by Matsui's branch-and-bound algorithm (Matsui, EUROCRYPT 1994, Sect. 4).
  *
  *   gcc -O3 -march=native -o matsui matsui.c -lm
  *   ./matsui <eelbc|present> <lin|diff|aslin|asdiff> <Rmax> [time_limit_seconds_per_round]

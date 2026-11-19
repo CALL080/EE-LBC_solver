@@ -1,7 +1,7 @@
 """Facts about the EE-LBC specification that need no search (S-box tables, permutation, the paper's examples).
 
 Run:  python code/check_spec.py   (output kept in outputs/check_spec.log)
-Each block prints a heading [n] that notes/spec_ja.md and README.md refer to.
+Each block prints a heading [n] that README.md refers to.
 """
 import itertools
 import os

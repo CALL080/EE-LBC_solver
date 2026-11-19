@@ -1,6 +1,6 @@
 """EE-LBC (Gupta and Sasikala, Int. J. Electr. Comput. Eng. Syst. 16(7):507-515, 2025), reference implementation.
 
-Every line below cites the proposal (source/EE-LBC_proposal.pdf; page numbers are the journal's, 507-515).
+Every line below cites the proposal (Gupta and Sasikala, IJECES 16(7), 2025; page numbers are the journal's, 507-515).
 Where the proposal is ambiguous the choice is a named option; the default is our reading of the text.
 
   block 64 bits, key 80 bits, 31 rounds                               (p. 508 bullets, p. 509 Sect. 3)
@@ -14,7 +14,7 @@ Where the proposal is ambiguous the choice is a named option; the default is our
       for i = 2..31:  rotate left by 61; Key64 through the substitution layer;
                       (K19..K15) ^= counter;  K_i = (K79..K16)
 
-Options (the points the proposal leaves open, see notes/spec_ja.md):
+Options (the points the proposal leaves open, Sect. 2.3 of the paper):
   perm      'table'  : bit i -> PERM[i] as the text says (default)
             'inverse': the cell index is the new position (the figure's label "NewBit Position")
   ks_sbox   'all'    : "Key64 goes through the substitution layer" = all 16 nibbles of K79..K16 (default, literal)

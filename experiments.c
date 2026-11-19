@@ -1,4 +1,4 @@
-/* Reduced-round experiments on EE-LBC (default reading of code/eelbc.py: 80-bit rotation by 61,
+/* Reduced-round experiments on EE-LBC (default reading of eelbc.py: 80-bit rotation by 61,
  * Key64 through the S-box layer, counter i, no key after the last round).
  *
  *   gcc -O3 -march=native -fopenmp -o experiments experiments.c

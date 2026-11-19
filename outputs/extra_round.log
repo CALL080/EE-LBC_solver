@@ -1,0 +1,3 @@
+[1] bits of x_30 fed by the outputs of S-box 5 in round 30: [5, 21, 37, 53]
+[2] correlation of the predicted bit for the 15 wrong guesses: [0.0, 0.5] ; equal to +-1 for 0 guesses
+[3] Selcuk factor for rank 1 with probability 0.9: a = 20: 38.22, a = 24: 44.91, ratio 2^0.23; data factor 4 / 1.175 = 3.40 (2^1.77)

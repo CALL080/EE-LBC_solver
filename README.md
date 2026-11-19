@@ -73,12 +73,13 @@ measurements are the same on every run.
 | Sect. 4.2 | Selcuk's model: 2^61.26 known plaintexts for the 20-bit guess with success 0.9 (not used for Table 4) | `python3 complexity.py` | `complexity.log`, `[2]` |
 | Sect. 4.2 | A wrong guess has correlation `rho c`; over all 2^20 - 1 wrong guesses, `|rho|` reaches 0.75 for 18 and is never 1 (same for six random correct guesses) | `./run_all.sh` | `wrongkeys.log` |
 | Sect. 4.3, Table 5 | Rank (1 + number of guesses with a larger score) of the correct 20-bit guess on 12, 14 and 16 rounds: with `N = 2^6/c_0^2`, among the best 2^10 in 62 of 64 runs and first in 48; with `2^7/c_0^2` on 12 rounds, first in 30 of 32; median rank 4.5 in the first row (usual median) | `./run_all.sh --full` | `keyrec_r12_32seeds.log`, `keyrec_longer.log`, `summarize_experiments.log` `[3]`, `figs/tab_keyrec_rows.tex` |
-| Sect. 4.3 | The fixed-key hull has the sign of the measured correlation for all 48 keys of `corr_16keys.log` (median deviation 0.18 to 0.31 bits) and deviates from the correct-guess correlations of the 64 key-recovery runs by 0.15 to 0.38 bits in the median | `./run_all.sh` (measurements: `--full`) | `fixedhull_check.log`, `summarize_experiments.log` `[5]`; `fixedhull_check_keyrec.log`, `check_keyrec_hull.log` `[1]` |
+| Sect. 4.3 | The fixed-key hull has the sign of the measured correlation for all 48 keys of `corr_16keys.log` (median deviation 0.18 to 0.31 bits; the paper gives the combined range 0.15 to 0.38) and deviates from the correct-guess correlations of the 64 key-recovery runs by 0.15 to 0.38 bits in the median | `./run_all.sh` (measurements: `--full`) | `fixedhull_check.log`, `summarize_experiments.log` `[5]`; `fixedhull_check_keyrec.log`, `check_keyrec_hull.log` `[1]` |
 | Sect. 4.3 | Over 10000 keys and the round keys of rounds 3 to 30: median of `|c|` is 2^-28.15, and 44.5%, 61.5%, 74.0% of the keys have `|c|` >= 2^-28, 2^-28.5, 2^-29; over rounds 1 to 30, the median is 2^-30.17 | `./run_all.sh` | `fixedhull_stats_window.log` (`fixedhull_stats.log`: 2000 keys for several `L`, supplementary) |
 | Sect. 4.3, Table 4 | In the runs of Table 5 with `N = 2^6/c_0^2`, `c_0 = 2^-L`, the 26 runs (20 keys; 14 and 16 rounds share seeds) whose predicted `|c|` is at least `c_0` had the correct guess first in 25 and among the best 2^10 in all 26 | `./run_all.sh` | `check_keyrec_hull.log` `[2]` |
 | Sect. 4.3 | Whenever the correct guess ranked first, no wrong guess had the same score (ties occur only in runs where it did not rank first) | `./run_all.sh` | `check_keyrec_hull.log` `[3]` (fields `ties=` and `best wrong` of the `keyrec` lines) |
 | Table 4 | For half of the keys: `N = 2^6/c^2` = 2^62.30 with the median `|c|` = 2^-28.15 (so that `N c^2 >= 2^6`); time 2^60 (best guess) or 2^70 (best 2^10 guesses) for the remaining 60 key bits | `python3 complexity.py` | `complexity.log`, `[6]` |
 | Sect. 6 | With the PRESENT S-box, a final key, and the PRESENT readings of the open points, the code reproduces the four PRESENT-80 test vectors | `python3 check_spec.py` | `[9]` |
+| Sect. 6 | Variant not evaluated: guessing also the four bits of `K_31` after S-box 5 of round 30 (bits 5, 21, 37, 53) shortens the trail by one round and reduces the data about threefold (factor 3.40: 4 for the correlation, divided by 1.175 for the larger guess); wrong guesses of these bits predict with correlation 0 or 0.5, never 1 | `python3 extra_round.py` | `extra_round.log` |
 
 Run times on one PC (20 threads): `check_spec.py` about 15 s, `./run_all.sh` about 2 min,
 `./run_all.sh --full` about two hours more (the longest single runs are 2^34 encryptions of 14 rounds and the key
@@ -96,6 +97,7 @@ recovery on 16 rounds with 2^32 known plaintexts).
 - `complexity.py` — data and time of the full-round attacks: Selcuk's model, the distinguisher, and the complexities for half of the keys.
 - `summarize_experiments.py`, `make_figs.py` — Tables 3 and 5 and Fig. 2 from the logs.
 - `check_keyrec_hull.py` — the key-recovery runs against the fixed-key hull of the same keys, and the success for keys with `N c^2 >= 2^6`.
+- `extra_round.py` — the data factor of the variant with four more guessed key bits in the last round (Sect. 6).
 - `run_all.sh` — builds and runs everything; each C file also gives its build command in its header.
 
 ## License
